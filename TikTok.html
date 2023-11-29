@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing</title>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Bootstrap 5.3.2 Stylesheet -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <style>
+    body {
+      background-color: rgb(21, 8, 8);
+      color: whitesmoke;
+      position: relative;
+      max-width: 100%;
+    }
+
+    h1 {
+      font-weight: bold;
+    }
+
+    h3 {
+      font-size: x-large;
+    }
+
+    h4 {
+      text-align: center;
+    }
+
+    a {
+      color: #27ADEA;
+    }
+
+    hr {
+      height: 2px;
+      background-color: whitesmoke;
+      border: none;
+    }
+
+    #details {
+      opacity: 80%;
+      font-size: smaller;
+    }
+
+    .hover-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: white;
+      z-index: 2;
+    }
+
+    .fakeimg {
+      height: 200px;
+      /* background: #aaa; */
+      background-color: rgb(21, 8, 8);
+      margin: 1em 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation Bar Start -->
+  <header class="header container p-3" id="navbar" style="color: #27ADEA;">
+    <div class="d-flex justify-content-between align-items-center">
+      <a href="Landing.html">
+        <img src="Assets/Thumbnails/logo3.svg" alt="" style="height: 40px;">
+      </a>
+      <div class="d-flex justify-content-between align-items-center">
+        <a href="Hand.html" style="padding: 10px;">Hand</a>
+        <a href="Heart.html" style="padding: 10px;">Heart</a>
+        <a style="padding: 10px;">|</a>
+        <a href="#contact" style="padding: 10px;">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HEADER -->
+  <div class="container flex-wrap mt-5 inline">
+    <div class="row">
+
+      <!-- Summary -->
+      <div class="col-4">
+        <h1>TikTok AI AdAssistant</h1>
+        <h3 style="opacity: 80%;">Reimagining advertising on TikTok</h3>
+        <p>AdAssistant enables users to ask questions about TikTok ads easily.</p>
+        <p>This project best articulates my ability to design and prototype a digital product.</p>
+        <hr>
+        <p class="sub"><strong>Project Audience</strong>:</p>
+        <ul class="sub">
+          <li>TikTok users</li>
+          <li>Content creators</li>
+          <li>Advertisers</li>
+        </ul>
+        <p class="sub"><strong>Reading Length</strong>: 5 mins</p>
+      </div>
+
+      <!-- Image -->
+      <div class="col-5 justify-content-center" style="height: 500px; z-index: -1;">
+        <video src="Assets/TikTok/TikTok_Hero.mov" style="width: 100%; overflow: hidden;" autoplay muted loop></video>
+      </div>
+
+      <!-- Details -->
+      <div class="col-3" id="details">
+        <div class="m-3">
+          <h3>Date</h3>
+          <hr>
+          <p>Januaray-March 2023</p>
+        </div>
+        <!-- <br> -->
+        <div class="m-3">
+          <h3>Team</h3>
+          <hr>
+          <a href="https://www.linkedin.com/in/s-kelsie-yu-321269225/">Kelsie Yu</a><br>
+          <a href="https://www.linkedin.com/in/lauren-schlageter/">Lauren Schlageter</a><br>
+          <a href="https://www.linkedin.com/in/filip-maninski/">Filip Maninski</a><br>
+          <a href="https://www.linkedin.com/in/alliewicks/">Allie Wicks</a><br>
+        </div>
+        <!-- <br> -->
+        <div class="m-3">
+          <h3>Skills</h3>
+          <hr>
+          <ul>
+            <li>User Experience (UX)</li>
+            <li>User Testing</li>
+            <li>Mocking-Up</li>
+            <li>Advertising</li>
+            <li>Digital Prototyping</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="fakeimg" style="height: 50px;"></div>
+  </div>
+
+  <!-- PROBLEM -->
+  <div class="container flex-wrap pt-5 col-8">
+    <h3 class="text-center">Problem</h3>
+    <hr class="rounded">
+    <div class="container-fluid">
+      <div class="fakeimg" style="height: 100px;"></div>
+    </div>
+
+    <h3 class="text-center">“How might we make interactions with advertisements feel more <strong>organic</strong> and
+      <strong>transparent</strong>?”
+    </h3>
+  </div>
+
+  <div class="container-fluid">
+    <div class="fakeimg" style="height: 50px;"></div>
+  </div>
+
+  <div class="container text-center">
+    <div class="row">
+
+      <!-- Top Quotes -->
+      <div class="col align-self-start">
+        <p>“Influencers aren’t always honest when something is an ad.”</p>
+      </div>
+      <div class="col align-self-end">
+        <p>“Transparency.”</p>
+      </div>
+      <div class="col align-self-center">
+        <p>"Since videos on TikTok are really short, I usually don’t understand what they’re promoting."</p>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="fakeimg" style="height: 50px;"></div>
+    </div>
+
+    <!-- Keeping -->
+    <div class="row">
+      <div class="text-center">
+        <h1>Keeping these points in mind...</h1>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="fakeimg" style="height: 50px;"></div>
+    </div>
+
+    <!-- Bottom Quotes -->
+    <div class="row">
+      <div class="col align-self-end">
+        <p>“Ads should feel more natural.”</p>
+      </div>
+      <div class="col align-self-start">
+        <p>"I just don't want to leave the app to learn more about a product."</p>
+      </div>
+      <div class="col align-self-center">
+        <p>"I wish ads were more like a conversation, not a pitch."</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="fakeimg" style="height: 50px;"></div>
+  </div>
+
+  <!-- Solution -->
+  <div class="container flex-wrap pt-5 col-10">
+
+    <!-- Header -->
+    <h3 class="text-center">Solution</h3>
+    <hr class="rounded">
+
+    <div class="row justify-content-between">
+      <!-- AdAssistant -->
+      <div class="col-7 inline">
+        <h1>AdAssistant</h1>
+        <h3>AI-powered chatbot that makes ads make sense.</h3>
+        <br>
+        <p>Advertisers aim for ads that are short and impressionable, meaning they must omit details. How would you
+          learn more about the product if you were interested?</p>
+        <p><strong>AdAssistant</strong> is the answer. It would be a primary source of information.</p>
+
+        <!-- Features -->
+        <div class="container mt-5 inline flex-wrap">
+          <h3 class="text-center">Features</h3>
+          <hr class="rounded">
+          <p>Through <strong>user testing</strong>, we prioritized the following features:</p>
+
+          <div class="row">
+
+            <div class="col-4">
+              <h4>Accessibility</h4>
+              <!-- <div class="container-fluid"><div class="fakeimg" style="height: 100px;"></div></div> -->
+              <video src="Assets/TikTok/Walkthrough/TikTok_Type.mov" controls loop muted></video>
+              <p class="sub">You can interact with AdAssistant with both speech and type.</p>
+              <p class="sub"></p>
+            </div>
+
+            <div class="col-4">
+              <h4>Consistency</h4>
+              <!-- <div class="container-fluid"><div class="fakeimg" style="height: 100px;"></div></div> -->
+              <video src="Assets/TikTok/Walkthrough/TikTok_Roam.mov" controls loop muted></video>
+              <p class="sub">The overlay pop-up blends with the interface, allowing for easy navigation into and out of
+                the AdAssistant.</p>
+              <p class="sub">Revisiting the ad becomes easy this way.</p>
+            </div>
+
+            <div class="col-4">
+              <h4>Ease of Use</h4>
+              <!-- <div class="container-fluid"><div class="fakeimg" style="height: 100px;"></div></div> -->
+              <video src="Assets/TikTok/Walkthrough/TikTok_Suggested.mov" controls loop muted></video>
+              <p class="sub">Suggested questions are included and answers are short.</p>
+              <p class="sub">Entering and exiting AdAssistant is also a swipe away.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual -->
+      <div class="col-5 inline">
+        <video src="Assets/TikTok/Walkthrough/TikTok_Voice.mov" autoplay muted loop></video>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="fakeimg" style="height: 50px;"></div>
+    </div>
+
+    <!-- Benefits -->
+    <div class="row flex-wrap justify-content-center">
+      <div class="row">
+        <div class="col-7">
+          <h3 class="text-center">Attributes</h3>
+          <hr class="rounded">
+          <img src="Assets/TikTok/TikTok_attributes.png" alt="">
+        </div>
+        <div class="col-5">
+          <h3 class="text-center">Benefits</h3>
+          <hr class="rounded">
+          <img src="Assets/TikTok/TikTok_Benefits.png" alt="">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Takeaways and Responsibilities -->
+  <div class="container-fluid p-3">
+    <div class="fakeimg" style="height: auto;">
+      <div class="row container">
+
+        <!-- Takeaways -->
+        <div class="col">
+          <h3 class="text-center" style="margin-top: 1em;">TAKEAWAYS</h3>
+          <hr class="rounded">
+          <ul>
+            <li>Understood what good mockups entail: a good experience. It's not about getting as close to the final
+              product as possible but designing interactive experiences that emphasize certain features.</li>
+            <br>
+            <li>Experienced working with a social media giant; I better understand their values. I also gained a better
+              idea of why things are designed the way they are (I notice more!)</li>
+            <br>
+            <li>Learned how to quickly make high-fidelity mockups–and in the process, how to ask the right questions.
+            </li>
+            <br>
+            <li>Worked with a diverse group of people (i.e. Marketing, Journalism, Sociology, Design, Biology majors).
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Responsibilities -->
+        <div class="col">
+          <h3 class="text-center" style="margin-top: 1em;">RESPONSIBILITIES</h3>
+          <hr class="rounded">
+          <li>Developing 1 of 4 initial mockups</li>
+          <li>Researching YouTube as a case study</li>
+          <li>Conducting User Testing</li>
+          <li>Pitching presentation to TikTok</li>
+          <li>User Experience (UX) design</li>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="container p-3 text-center">
+    <div class="row flex-wrap">
+      <div class="inline col-sm-4 mt-2 mb-2">
+        <img class="ms-2 me-2" src="Assets/Thumbnails/github-white.png" alt="" style="height: 30px;">
+        <img class="ms-2 me-2" src="Assets/Thumbnails/instagram-white.png" alt="" style="height: 30px;">
+        <img class="ms-2 me-2" src="Assets/Thumbnails/spotify-white.png" alt="" style="height: 30px;">
+        <img class="ms-2 me-2" src="Assets/Thumbnails/linkedin-white.png" alt="" style="height: 30px;">
+        <img class="ms-2 me-2" src="Assets/Thumbnails/youtube-white.png" alt="" style="height: 25px;">
+      </div>
+      <p class="sub col-sm-4" text-center>Designed using Figma and built using Bootstrap 5.</p>
+      <p class="sub col-sm-4" text-end>khalidsiraj2025@u.northwestern.edu</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3.2 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

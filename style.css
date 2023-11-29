@@ -1,7 +1,57 @@
-.selector-for-some-widget {
-    box-sizing: content-box;
-  }
+:root {
+  --bs-body-bg: black;
+  --bs-body-font-family: 'Montserrat', sans-serif;
+  --bg-primary: red;
+}
+.fakeimg {
+  height: 200px;
+  background: #aaa;
+  margin: 1em 0;
+}
 
-  header {
-    display: inline;
-  }
+hr {
+  border: 0;
+  border-top: 1px solid gray !important;
+}
+
+/* Main Header */
+.header {
+  z-index: 2;
+  /* background-image: url(Assets/Landing/photography_alcatraz.jpg); */
+}
+
+/* Hero */
+.hero {
+  background-color: beige;
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+}
+
+#mega {
+  font-size: 4em;
+}
+
+.btn-outline-secondary a {
+  height: 100%; 
+  width: 100%;
+}
+
+h2 {
+  height: 2em;
+}
+
+#art_is {
+  background-color: blanchedalmond;
+}
+
+#contact {
+  background-color: blanchedalmond;
+}
+
+.sub {
+  font-size: 0.8em;
+  opacity: 70%;
+}
+
+

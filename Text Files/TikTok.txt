@@ -1,0 +1,191 @@
+HEADER
+
+<h1>TikTok AI AdAssistant</h1>
+
+<h3>Reimagining advertising on TikTok</h3>
+vid.TikTok_Hero
+
+The goal is to enhance the TikTok ad experience by empowering users to ask questions.
+This project articulates my ability to design and prototype a digital product
+
+--
+Reading Length: 5 mins
+
+Audience: TikTok users, content creators, advertisers
+
+Date: Januaray-March 2023
+
+    Skills
+User Experience (UX)
+Advertising
+Digital Prototyping
+Asking the right questions
+User Testing and Mockups
+
+    Team
+<a href="https://www.linkedin.com/in/s-kelsie-yu-321269225/">Kelsie Yu</a>
+<a href="https://www.linkedin.com/in/lauren-schlageter/">Lauren Schlageter</a>
+<a href="https://www.linkedin.com/in/filip-maninski/">Filip Maninski</a>
+<a href="https://www.linkedin.com/in/alliewicks/">Allie Wicks</a>
+--
+
+    OUTLINE (aside)
+Problem
+Our Solution
+Features and Benefits
+Takeaways and Responsibilities
+Process
+
+    ASIDE
+<h3>YouTube Ads (Case Study)</h3>
+Since YouTube works in a similar 'snappy' manner when it comes to advertising,
+we researched their types of ads, along with their marketing benefits and uses:
+
+1. Skippable Ads: best known for their 5-second skip button
+a. Called “pre-roll” when at the beginning and “mid-roll” when in the middle
+b. Advertisers don’t get charged unless the user watches past the
+first 5 seconds or if they click on the ad. This is called <strong>TrueView</strong>.
+
+2. Sponsored ads (Liam)
+a. The classic NordVPN, Squarespace, Skillshare, or Brilliant ads that are in-video
+b. There isn’t a centralized list of brands willing to partner with your channel.
+YouTubers either reach out to companies in their niche or become large enough to receive offers from companies.
+
+3. Non-Skippable Ads
+a. 76% of people have come to automatically skip ads,
+b. Some advertisers decide to make ads short to become non-skippable (usually 15
+seconds, or 20 in places like India, Malaysia, Mexico, and Singapore).
+c. They do this when they want to raise awareness and are confident enough to
+keep you engaged for the full ad.
+d. Advertisers pay per <strong>impression</strong>, which is measured in <strong>cost per mile (CPM)</strong> and is
+a metric used to quantify the number of digital views or engagements of a piece of content.
+
+4. Bumper Ads
+i. Usually 6 seconds, snappy and catchy
+ii. Also charged per impression
+iii. Can be pre-, mid-, or post-rolls
+iv. Best for reach and awareness campaigns
+
+5. Discovery ads
+Appear as videos related to whatever you search, and 
+
+6. Non-video ads 
+Appear on the side or as a video overlay for small companies, 
+
+<a href="https://blog.hootsuite.com/youtube-advertising/ ">Cooper, Paige. "The Complete Guide to YouTube Ads for Marketers." Hootsuite. June 11, 2020</a>
+
+---
+
+PROBLEM
+<h2>“How might we make interactions with advertisements feel more <strong>organic</strong> and <strong>transparent</strong>?”</h2>
+
+Keeping these points in mind...
+    “Influencers aren’t always honest when something is an ad.” (top-left)
+    “Transparency.” (top-middle)
+    "Since videos on TikTok are really short, I usually don’t understand what they’re promoting." (top-right)
+    “Ads should feel more natural.” (bottom-left)
+    "I just don't want to leave the app to learn more about a product." (bottom-mid)
+    "I wish ads were more like a conversation, not a pitch."
+
+--
+
+SOLUTION
+<h1>AdAssistant</h1>
+AI-powered chatbot that makes ads make sense.
+
+Advertisers aim for ads that are short and impressionable, meaning they must omit details.<br>
+How would you learn more about the product if you were interested?<br>
+<strong>AdAssistant</strong> is the answer. It would be a primary source of information.
+
+FEATURES
+Through user testing, we realized that AdAssistant
+
+    Accessibility
+AdAssistant questions and answers work with both speech and type.
+vid.TikTok_Voice
+
+    Ease of Use
+Suggested questions are included and answers are short. 
+Entering and exiting AdAssistant is also a swipe away.
+vid.TikTok_Suggested
+
+    Consistency
+Using a overlay pop-up screen blends it with the interface and allows for easy navigation into 
+and out of the AdAssistant. Revisiting the ad becomes easy this way.
+vid.TikTok_Type
+
+–––––img.TikTok_Attributes
+img.TikTok_Benefits
+
+--
+
+TAKEAWAYS
+Understood what good mockups entail: a good experience. It's not about getting as close to the final product as possible but creatively designing minimal yet interactive experiences that emphasize the most important features.
+Experienced working with a social media giant; I better understand their values. I also gained a better idea of why things are designed the way they are (I notice more!)<br>
+Learned how to quickly make high-fidelity mockups.<br>
+Worked with a diverse group of people (i.e. Marketing, Journalism, Sociology, Design, Biology majors)<br>
+
+RESPONSIBILITIES
+Developing 1 of 4 initial mockups<br>
+Researching YouTube as a case study<br>
+Conducting User Testing<br>
+Pitching presentation to TikTok<br>
+User Experience (UX) design<br>
+
+--
+
+PROCESS
+<h2>Brainstorming</h2>
+We brainstormed ways to empower users to learn about products while incentivizing companies to advertise credibly, honestly, and clearly.
+In the process, we came up with four initial mockups:
+
+01. Reaction Redesign
+Alert users that they are watching an advertisement, by changing the icons' colors.
+img.TikTok_Reaction_Redesign_Mock
+
+02. Critic Mode
+For users to engage with ads more consciously while providing advertisers reliable feedback.
+img.TikTok_Critic_Mode_Mock
+    (Hover)
+Switching to critic mode prompts users to answer straightforward questions about ads they watch. 
+The time they spend in critic mode guarantees the same amount of time ad-free.
+
+03. Friend-Endorsed Ads
+Friends can recommend ads to people they think would like it.
+img.TikTok_Friends_Mock
+
+04. AdAssistant
+Primary source of information for viewers with questions.
+img.TikTok_Ad_Assistant_Mock
+
+After receiving feedback, we decided to move forward with AdAssistant, as it had the most potential and was the most <em>orthogonal</em>.
+
+USER TESTING
+We drew a screen on a glass door and enacted the chat-bot experience.
+Three college students used it.
+We showed them four types of ads: healthcare, food, tech, and makeup, and we wanted to see:
+- How would they interact with the chat-bot?
+- What type of ads would they use it for?
+- What questions would they ask?
+img.TikTok_User_Testing_1
+img.TikTok_User_Testing_2
+vid.TikTok_User_Testing_3
+vid.TikTok_User_Testing_4
+
+
+SECOND PROTOTYPE
+Based on our results, we designed our second prototype with the folling features:
+- Closing AdAssistant takes users back to the ad they were viewing. (first-right)
+- A translucent background lets the user see the original advertisement. (second-left)
+- TikTok colors were used throughout for seamless interface integration. (third-left)
+- Accommodates speech and type (forth right)
+
+For our final prototype, we conducted further interface research to most seamlessly integrate
+AdAssistant into the app, and considered the following questions:</h3>
+- What are the <strong>most common questions</strong>?
+- How would the <strong>type of ad</strong> change them?
+- How should AdAssistant <strong>display</strong> answers?
+
+FINAL WIREFRAME
+The final high-fidelity prototype was created on <strong>Figma</strong> (the snippets above are the result of what's this wireframe!).
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FyUFy60FjhAu4SPAEhy6cHQ%2FTikTok-Interactive-Prototype-(Community)%3Ftype%3Ddesign%26node-id%3D4%253A171%26mode%3Ddesign%26t%3DL63Nb3Jv4cPxvFb7-1" allowfullscreen></iframe>

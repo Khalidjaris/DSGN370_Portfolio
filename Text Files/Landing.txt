@@ -1,0 +1,141 @@
+NAVIGATION
+img.logo.png
+<li>Hand</li>
+<li>Heart</li>
+|
+<li>Contact</li>
+
+--
+
+background-image: url(Assets/Landing/photography_alcatraz.jpg);" 
+<img src="Assets/All/logo.png" text-center>
+
+<h1 id="mega">Khalid Siraj</h1>
+<h3>Explorer and Experimenter of Things</h3>
+<p>Musician, Engineer, Writer, Designer, Philosopher</p>
+
+FEATURED
+<h2>Music Compositions</h2>
+<p>Piano pieces I composed, which include <em>Ragtime</em> (2021), <em>Rahil Ghadan</em> (2021), and <em>Lullaby of Remembrance</em> (2022).
+- <img src="Assets/Landing/music_burdened_blessings.jpeg" alt="" />
+Take a listen
+
+
+<h2>TikTok AI AdAssistant</h2>
+<p>Enhancing the TikTok ad experience by enabling users to ask questions.</p>
+<ul class="actions stacked">
+Check it out
+- <video src="Assets/Landing/TikTok_Hero.mov" alt="">
+
+<h2>Shield+</h2>
+––––<p>Designing a mask that enables the use of a mouthstick and <em>sip-and-puff</em> device without hands.
+Learn More
+- <img src="Assets/Landing/DTC1_Drawing.jpg" alt="" />
+
+---
+
+<h1>Me in ~15 Seconds</h1>
+<p><em>adjective – eternal, everlasting, immortal</em></p>
+
+<p>I play the piano, write, study engineering, and take the more 'interesting' route whenever I can.<br>
+I prefer running over walking and I carry a <a href='https://www.amazon.com/dp/B07V3HT9JG?psc=1&ref=ppx_yo2ov_dt_b_product_details'>
+mini notebook</a> everywhere I go. I also love to listen to people's stories.<br>
+Saudi Arabian native, I studied in Jordan for three years and now study at Northwestern University in the US.</p>
+<p>–––––</p>
+<p>Authenticity means approaching everything with an <em>open mind</em>, a burning <em>curiosity</em>, and a relentless <em>desire to inspire</em>. It is my discipline.
+<p>I practice various schools of thought to be versatile.</p>
+<p>I unlearn frameworks to be creative.</p>
+<p>–––––</p>
+<p>The future doesn't worry me because I'm certain that, no matter where I end up, I will be carving worlds for people to see.</p>
+<p>How I do so doesn't matter.</p>
+- <img src="Assets/Landing/Bio_Portrait.jpg">
+
+---
+
+––––<section style="background-image: url(#);">
+<h3 class="align-center"> To make art is to <strong>be true enough to yourself</strong> to <em>elicit curiosity in someone else.</em></h3>
+<h3 class="align-center"> With that, there's a lot in here. Enjoy.</h3>
+</section>
+
+
+---
+
+<h2>Hand</h2>
+TikTok AdAssistant
+- img.TikTok_Hero
+Shield+
+- DTC1_Drawing
+Manufacturing
+- img.manufacturing_sand_casting
+SAE Baja Frame Fixturing
+- img.baja_fixturing_side_frame
+Coding Experience
+- img.coding_angryBirds_diagram
+"Making Long-Term Connections in A Short-Term City"
+- img.jour_article_hero
+RHIT Optics Research
+- img.RHIT_optics_ellipsometer
+How2Help Volunteering Website
+- img.H2H_website_main
+Woodwork
+- img.H2H_website_main
+Courses
+- 
+
+---
+
+<h2>Heart</h2>
+Music
+- img.music_arabic_ensemble_main
+Writing/Poetry
+- img.
+Photography
+- img.photography_SanDiego_Lush
+Calisthenics/Breakdancing
+- img.dance_spring_show_awesome
+
+Miscellaneous Art
+- img.misc_horse_charcoal_drawing
+Favorites
+- favorites_music_artist
+In The Works
+- img.music_in_the_works
+
+--
+
+<h2>Acknowledgements</h2>
+<p class="col-sm-10 offset-md-1">
+This portfolio would not have been possible without the generous feedback from my remarkable peers, mentors, and friends. 
+My heartfelt thanks to Prof. Kim Hoffman, Pari Pradhan, Mark Schumacher, and Micheal Miller.
+</p>
+<p class="col-sm-10 offset-md-1">
+Special Thanks to:<br>
+Prof. Andrew Skwish for your infinite wisdom in simplifying the arduous task of putting your identity on a page.<br>
+Prof. Michael Peshkin for reminding me that everything in the world is fascinating.<br>
+Carolyn Cunningham, Yusra Dokum, and Prof. Kevin Fort, for your guidance through the ravishing world of music.<br>
+Yousef Abdo and Mohammed Hameed, for keeping me afloat during the darkest times and making them among the best.<br>
+Kareem AbuAlreesh,  for entrusting me with your dreams and mine.<br>
+Pam Daniels and Jason Yuan, for teaching me how to walk the path of the unconventional.<br>
+Stephen Dalvet, for instilling clarity of thought in me.<br>
+</p>
+</section>
+
+---
+
+<h2>Get In Touch</h2>
+<p>Interested in the works? Collaborating? Chatting? Let me know!<br>
+(I'm always looking for my next adventure.)</p>
+Say Hello
+- img.photography_otherworld
+
+--
+
+FOOTER
+<img src="Assets/All/github-black.png">
+<img src="Assets/All/instagram-black.png">
+<img src="Assets/All/spotify-black.png">
+<img src="Assets/All/linkedin-black.png">
+<img src="Assets/All/youtube-black.png">
+
+<p class="col-sm-4" text-center>Designed and Built by Khalid Siraj</p>
+<p class="col-sm-4" text-end>khalidsiraj2025@u.northwestern.edu</p>
