@@ -1,0 +1,122 @@
+
+HERO
+Background: #F6F2EF
+
+How2Help
+Volunteering made easy
+
+How2Help is an idea for a platform that:
+- streamlines the application process
+- educates and suggests potential solutions for issues at varying levels of involvement.
+- fosters connects between volunteering organizations and volunteers.
+
+Audience: 
+- everyday-goers
+- volunteering organizations
+
+Reading Length: 5 minutes
+
+--
+
+Date: Januaray-March 2023
+
+    Skills
+Figma
+–– Logo of Figma
+User Interface (UI)
+Digital Prototyping
+
+    Team
+<a href="https://www.linkedin.com/in/francine-kibwana/">Francine Kibwana</a>
+<a href="https://www.linkedin.com/in/amanda-kangsadjaja/">Amanda Kangsadjaja</a>
+<a href="https://www.linkedin.com/in/filip-maninski/">Filip Maninski</a>
+
+--
+
+OUTLINE (aside)
+Problem
+Our Solution
+Features and Benefits
+Takeaways and Responsibilities
+Process
+
+---
+
+PROBLEM
+
+How can we make it easy, accessible, and enjoyable to help while educating people?
+
+We read demoralizing headlines daily and often want to help but don't know how to.
+- img.h2h-headlines.png
+
+We tried to help, but our experience went something like that of Stephen below:
+
+1. Stephen returns home and ponders what he can do to help.
+2. Eager to do something, he jumps to his computer and begins searching.
+3. He is bedazzled by the availability of options!
+4. And finds one he likes...
+5. So far so good.
+6. ––
+7. And a barrage of obstacles come his way!
+8. He grows frustrated.<br> But he finds a glimmer of hope in a what seems to be a promising website.
+9. Only to find a long form on the other side.
+10. But he does it anyways, knowing that it’s for a good cause.
+11. Weeks fly by.
+12. And he droops despondently into his chair...
+
+PAIN POINTS
+We realized that:
+- It is challenging to find ways to help without making <strong>monetary</strong> donations.
+- Opportunities that don't require money require a <strong>significant time commitment</strong>, specifically the sign-up process.
+- Navigating volunteering websites and resources is <strong>confusing</strong>.
+
+--
+
+SOLUTION
+
+How2Help
+An online volunteering center that makes turning compassion to action easy.
+
+FEATURES
+To hit as many birds with one stone as possible, we prioritized the following:
+
+    Suggest solutions
+    Bottom of articles
+
+    Volunteering center
+
+    Application once
+
+We also thought...
+How might we facilitate signing up <strong>beyond the screen</strong>?
+
+WHERE TO IMPROVE/STEPS MOVING FORWARD
+- Interview volunteering organizations
+- Conduct further user testing
+- Test run website
+
+---
+
+    TAKEAWAYS
+Realized (the hard way) that trying to solve all problems means solving none. It is good practice to identify one core issue and scale it down to something doable.
+Successfully extended a product to various media.
+Conducted experience-research by attempting the application process ourselves.
+Regretted not doing enough user testing.
+
+    RESPONSIBILITIES
+Ideating
+User Testing
+Figma Prototype
+Presenting product in class
+
+---
+
+PROCESS
+Inspiration
+
+Brainstorming/Mockups
+(All pictures)
+
+Figma Wireframe
+
+

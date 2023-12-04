@@ -2,11 +2,21 @@
   --bs-body-bg: black;
   --bs-body-font-family: 'Montserrat', sans-serif;
   --bg-primary: red;
+  --a:
 }
-.fakeimg {
-  height: 200px;
-  background: #aaa;
-  margin: 1em 0;
+
+#hero h1 {
+  font-size: 4em;
+}
+
+a {
+  /* color: #00BBFF !important; */
+}
+
+h2 {
+  font-size: 4em;
+  height: 2em;
+  padding: 10px;
 }
 
 hr {
@@ -14,44 +24,177 @@ hr {
   border-top: 1px solid gray !important;
 }
 
+figcaption {
+  font-size: 1.2em;
+}
+
+.fakeimg {
+  height: 200px;
+  /* background: #aaa; */
+  /* background: white; */
+  margin: 1em 0;
+}
+
+.background-img {
+  width: 100%;
+  /* height: 100vh; */
+  z-index: -1;
+  background-position: bottom;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 /* Main Header */
 .header {
   z-index: 2;
-  /* background-image: url(Assets/Landing/photography_alcatraz.jpg); */
-}
-
-/* Hero */
-.hero {
-  background-color: beige;
-  position: relative;
-  overflow: hidden;
-  z-index: -1;
-}
-
-#mega {
-  font-size: 4em;
+  background-image: url(Assets/Landing/photography_alcatraz.jpg);
 }
 
 .btn-outline-secondary a {
-  height: 100%; 
+  height: 100%;
   width: 100%;
 }
 
-h2 {
-  height: 2em;
-}
-
-#art_is {
-  background-color: blanchedalmond;
-}
-
-#contact {
-  background-color: blanchedalmond;
-}
-
 .sub {
-  font-size: 0.8em;
+  font-size: 1em;
   opacity: 70%;
 }
 
+/* –––––– */
 
+/* FOR SHADOW */
+.hovernow {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.hovernow:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+/* HOVER FOR TEXT */
+.image {
+  position: relative;
+}
+
+.image:hover:after {
+  position: absolute;
+  content: attr(title);
+  font-size: 1em;
+  border-radius: 10px;
+  display: inline-block;
+  left: 50%;
+  top: 50%;
+  padding: 5px;
+  background-color: black;
+  color: white;
+}
+
+.bg {
+  width: 100%;
+  /* height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 300% 300%;
+  background-image: linear-gradient(-45deg, #0bf 0%, #0bf 25%, #0bf 51%, #2BC7A0 100%);
+
+  -webkit-animation: AnimateBG 20s ease infinite;
+  animation: AnimateBG 20s ease infinite;
+}
+
+.bg-2 {
+  width: 100%;
+  /* height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 300% 300%;
+  background-image: linear-gradient(-45deg, #EA284D 0%, #EA284D 25%, #EAC326 51%, #EAC326 100%);
+
+  -webkit-animation: AnimateBG 20s ease infinite;
+  animation: AnimateBG 20s ease infinite;
+}
+
+@-webkit-keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1 {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+}
+
+h2 {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+}
+
+h3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 15.4px;
+}
+
+p {
+  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+blockquote {
+  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+  font-size: 21px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+pre {
+  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 18.5714px;
+}

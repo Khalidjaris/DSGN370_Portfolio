@@ -22,119 +22,117 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;1,400&display=swap"
         rel="stylesheet">
 
+    <!-- Pyscript -->
+    <!-- <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" /> -->
+
     <style>
+        #cell {
+            height: 100%;
+            width: auto;
+            object-fit: cover;
+        }
+
+        #icon {
+            height: 30px;
+            margin: 2px 4px;
+        }
+
+        .night-mode {
+            color: whitesmoke;
+            background-color: black;
+        }
+
+        .logo {
+            height: 30px;
+            width: auto;
+            margin-bottom: 20px;
+        }
+
         /* Hero */
-        .hero {
-            background-color: beige;
-            position: relative;
-            overflow: hidden;
-            z-index: -1;
-            height: 90vh;
+        #hero {
+            height: 100vh;
         }
 
-        .fakeimg {
-            height: 200px;
-            /* background: #aaa; */
-            background: white;
-            margin: 1em 0;
-        }
-        
-        .cell {
-            /* background: #aaa; */
+        #art-is {
+            color: whitesmoke;
+            /* background-color: blanchedalmond; */
+            background-image: url(Assets/Landing/art-is-background.JPG);
             background-size: cover;
+            background-repeat: no-repeat;
         }
 
-        </style>
+        #acknowledgements {
+            background-image: url(Assets/Landing/background-acknowledgements.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+        }
+
+        #acknowledgements a {
+            color: whitesmoke;
+        }
+
+        #contact {
+            /* padding: 1000px 0; */
+            background-color: blanchedalmond;
+            padding: 20em;
+            border-radius: 10px;
+            background-image: url(Assets/Landing/photography-otherworld.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 0 70%;
+        }
+    </style>
 </head>
 
 <body>
 
+
     <!-- Navigation Bar Start -->
     <header class="header container p-3" id="navbar">
-        <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex justify-content-between align-items-center" style="color: black !important;">
             <a href="Landing.html">
-                <img src="Assets/Thumbnails/logo3.svg" alt="" style="height: 40px;">
+                <div class="bg-2" style="border-radius: 15px; background-color: azure;">
+                    <img src="Assets/Thumbnails/logo2-2.svg" style="padding: 10px; width: 60px; height: 60px;" alt="">
+                </div>
+                <!-- <img src="Assets/Thumbnails/logo3.svg" alt="" style="height: 40px;"> -->
             </a>
-            <div class="d-flex justify-content-between align-items-center">
-                <a href="Hand.html" style="padding: 10px;">Hand</a>
-                <a href="Heart.html" style="padding: 10px;">Heart</a>
-                <a style="padding: 10px;">|</a>
-                <a href="#contact" style="padding: 10px;">Contact</a>
-            </div>
+            <ul class="nav nav-underline">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#hand"
+                        style="color: black !important;"><strong>Hand</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#heart" style="color: black !important;"><strong>Heart</strong></a>
+                </li>
+                <li class="nav-item">
+                    <hr width="1" size="img-fluid">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact" style="color: black !important;"><strong>Contact</strong></a>
+                </li>
+            </ul>
         </div>
     </header>
 
     <!-- Hero -->
     <div class="hero p-5 text-black text-center" id="hero">
-        <img src="Assets/Thumbnails/logo.png">
-        <h1 id="mega">Khalid Siraj</h1>
+        <div class="bg"
+            style="position: absolute; z-index: -1; top: 0; left: 0; height: 100vh; border-radius: 0 0 15px 15px;">
+            <!-- <img src="Assets/Landing/background-floating-shapes.svg" class="position: absolute; width: 100%; top: 0; left: 0; opacity: 50%" alt=""> -->
+        </div>
+        <!-- <video class="img-fluid" src="Assets/Landing/background-vortex.mp4" style="position: absolute; z-index: -1; top: 0; left: 0; height: 100vh; width: 100%; border-radius: 0 0 15px 15px;" muted autoplay loop></video> -->
+        <img src="Assets/Thumbnails/logo3.svg" style="width: 40vh;">
+        <div class="container-fluid">
+            <div class="fakeimg" style="height: 30px;"></div>
+        </div>
+        <h1><strong>Khalid Siraj</strong></h1>
         <h3>Explorer and Experimenter of Things</h3>
         <p>Musician, Engineer, Writer, Designer, Philosopher</p>
     </div>
 
-    <!-- Featured -->
-    <section class="container mt-5" id="featured">
-        <div class="row text-center">
-            <h1 class="text-center">Featured Projects</h1>
-            <hr class="rounded">
-            <!-- 1 -->
-            <div class="col-sm-4">
-                <a class="btn" href="#" role="button" style="height: 100%; width: 100%;">
-                    <h2>Music Compositions</h2>
-                    <br>
-                    <img style="width: auto;" src="Assets/Landing/music_burdened_blessings.jpeg" alt="">
-                    <!-- <div class="fakeimg">Fake Image</div> -->
-                    <br>
-                    <br>
-                    <p>Some piano pieces I composed include
-                        <ul style="font-size: smaller; text-align: left;">
-                            <li>
-                                <p><em>Ragtime</em> (2021)</p>
-                            </li>
-                            <li>
-                                <p><em>Rahil Ghadan</em> (2021)</p>
-                            </li>
-                            <li>
-                                <p><em>Lullaby of Remembrance</em> (2022)</p>
-                            </li>
-                        </ul>
-                </a>
-            </div>
-
-            <!-- 2 -->
-            <div class="col-sm-4">
-                <a class="btn" href="TikTok.html" role="button" style="height: 100%; background-color: black; color: whitesmoke;">
-                    <h2>TikTok AI AdAssistant</h2>
-                    <br>
-                    <img src="Assets/TikTok/TikTok_AdAssistant.png" alt="">
-                    <!-- <video style="max-height: 200px; background-position: center center;" src="Assets/Landing/TikTok_Hero.mov" class="" alt="" autoplay muted> -->
-                    <br>
-                    <br>
-                    <p>Enhancing the TikTok ad experience by enabling users to ask questions.</p>
-                </a>
-            </div>
-
-            <!-- 3 -->
-            <div class="col-sm-4">
-                <a class="btn" href="#" role="button" style="height: 100%;">
-                    <h2><br>Shield+</h2>
-                    <br>
-                    <img src="Assets/Landing/DTC1_Drawing.jpg" class="img-fluid" alt="">
-                    <br>
-                    <br>
-                    <p>Designing a mask that enables the use of a mouthstick and <em>sip-and-puff</em> device without
-                        hands.</p>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <div class="container-fluid">
-        <div class="fakeimg" style="height: 50px;"></div>
-    </div>
-
     <!-- About Me -->
-    <secton id="about_me">
+    <secton id="about-me">
         <div class="container p-5">
             <div class="row">
                 <h5 style="margin-bottom: 0;">Me in ~15 Seconds</h4>
@@ -142,14 +140,15 @@
             </div>
             <div class="row">
                 <div class="col-sm-7">
-                    <p style="font-size: smaller;"><em><strong>adj.</strong> – eternal, everlasting, or immortal +
-                            light</em></p>
+                    <p style="font-size: smaller;"><strong>adj.</strong> – eternal, everlasting, or immortal +
+                            light</p>
                     <p>I play the <u><a href="#">piano</a></u>, <u><a href="#">write</a></u>, study <u><a
-                                href="#">engineering</a></u>, and take the more 'interesting' route whenever I can.
+                                href="#hand">engineering</a></u>, and take the more 'interesting' route whenever I can.
                     <p>I prefer running over walking and I carry a <u><a
-                                href='https://www.amazon.com/dp/B07V3HT9JG?psc=1&ref=ppx_yo2ov_dt_b_product_details'>
+                                href='https://www.amazon.com/dp/B07V3HT9JG?psc=1&ref=ppx-yo2ov-dt-b-product-details'
+                                target="_blank" rel="noopener noreferrer">
                                 mini notebook</a></u> everywhere I go. I also love to listen to people's stories.</p>
-                    <p>Saudi Arabian native, I studied in Jordan for three years and now study at Northwestern
+                    <p>Native to Saudi Arabia, I studied in Jordan for three years and now study at Northwestern
                         University in the US.</p>
 
                     <hr>
@@ -167,116 +166,240 @@
                     <p>How I do so doesn't matter.</p>
                 </div>
                 <div class="col-sm-5">
-                    <img src="Assets/Landing/Bio_Portrait.jpg" style="height: auto; max-width: 100%;">
+                    <!-- <img src="Assets/Landing/Bio-Portrait.jpg" style="height: auto; max-width: 100%;"> -->
+                    <img src="Assets/Landing/bio-portrait.jpg" class="img-fluid">
                 </div>
             </div>
-            </section>
+        </div>
+    </secton>
 
-            <div class="container-fluid">
-                <div class="fakeimg" style="height: 50px;"></div>
+    <div class="container-fluid">
+        <div class="fakeimg" style="height: 50px;"></div>
+    </div>
+
+    <!-- Transition -->
+    <section class="img-fluid text-center justify-content-md-center p-5" id="art-is">
+        <div>
+            <h3>To make art is to <strong>be true enough to yourself</strong> to <br> <em>elicit curiosity in
+                    someone else.</em></h3>
+            <br>
+            <h3>With that, there's a lot in here.</h3>
+            <h3 style="font-size: 2.5em;"><em>Enjoy.</em></h3>
+        </div>
+    </section>
+
+    <!-- Featured -->
+    <section class="container mt-5" id="featured">
+        <div class="row text-center">
+            <h1 class="text-center">Featured Projects</h1>
+            <hr class="rounded">
+            <!-- 1 -->
+            <div class="col-sm-4">
+                <a class="btn hovernow" href="#" role="button" style="height: 100%; width: 100%;">
+                    <h2>Music Compositions</h2>
+                    <!-- <br> -->
+                    <figure>
+                        <img style="width: auto;" src="Assets/Landing/music-burdened-blessings.jpeg" class="img-fluid"
+                            alt="">
+                        <br>
+                        <br>
+                        <figcaption>
+                            <p>Some piano pieces I composed include
+                            <ul style="font-size: smaller; text-align: left;">
+                                <li>
+                                    <p><em>Ragtime</em> (2021)</p>
+                                </li>
+                                <li>
+                                    <p><em>Rahil Ghadan</em> (2021)</p>
+                                </li>
+                                <li>
+                                    <p><em>Lullaby of Remembrance</em> (2022)</p>
+                                </li>
+                            </ul>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </a>
             </div>
 
-            <!-- Transition -->
-            <section class="container-fluids text-center justify-content-md-center p-5" id="art_is">
-                <div>
-                    <h3>To make art is to <strong>be true enough to yourself</strong> to <br> <em>elicit curiosity in
-                        someone else.</em></h3>
+            <!-- 2 -->
+            <div class="col-sm-4">
+                <a class="btn hovernow" href="Tiktok.html" role="button"
+                    style="height: 100%; background-color: black; color: whitesmoke;">
+                    <h2>TikTok AI AdAssistant</h2>
+                    <!-- <br> -->
+                    <figure>
+                        <video src="Assets/Landing/tiktok-hero.mov" class="img-fluid" autoplay loop muted></video>
+                        <!-- <img src="Assets/tiktok/tiktok-AdAssistant.png" class="img-fluid" alt=""> -->
+                        <br>
+                        <br>
+                        <figcaption>
+                            <p>Enhancing the TikTok ad experience by enabling users to ask questions.</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+
+            <!-- 3 -->
+            <div class="col-sm-4 image" title="This page is not finished yet. Come back later!">
+                <!-- <a class="btn hovernow" href="#" role="button" style="height: 100%;"> -->
+                <h2>Shield+</h2>
+                <!-- <br> -->
+                <figure>
+                    <img src="Assets/Landing/dtc1-poster.jpg" class="img-fluid" alt="">
                     <br>
-                    <h3>With that, there's a lot in here.</h3>
-                    <h3>Enjoy.</h3>
-                </div>
-            </section>
+                    <br>
+                    <figcaption>
+                        <p>Designing a mask that for using a mouthstick and <em>sip-and-puff</em> device.</p>
+                    </figcaption>
+                </figure>
+                <!-- </a> -->
+            </div>
+        </div>
+    </section>
 
-            <!-- Hand -->
-            <section class="flex-wrap pt-5" id="hand">
-                <div class="row">
-                    <h1 class="text-center">Hand</h1>
-                    <hr class="rounded">
-                    <div class="cell col-sm-3">
-                        <video src="Assets/Landing/TikTok_Hero.mov" alt="">
-                    </div>
-                    <div class="cell col-sm-3">
-                        <img src="Assets/Landing/DTC1_Drawing.jpg" alt="">
-                    </div>
-                    <div class="cell col-sm-3">
-                        <img src="Assets/Landing/manufacturing_sand_casting.jpeg" alt="">
-                    </div>
-                    <div class="cell col-sm-3">
-                        <img src="Assets/Landing/baja_fixturing_side_frame.png" alt="">
-                    </div>
-                    <div class="cell col-sm-3">
-                        <img src="Assets/Landing/coding_angryBirds_diagram.jpg" alt="">
-                    </div>
-                    <div class="cell col-sm-3">
-                        <img src="Assets/Landing/jour_article_hero.png" alt="">
-                    </div>
-                    <div class="cell col-sm-3">
-                        <img src="Assets/Landing/H2H_website_main.png" alt="">
-                    </div>
-                    <div class="cell col-sm-3">
-                        <img src="Assets/Landing/RHIT_optics_ellipsometer.jpg" alt="">
-                    </div>
-                </div>
-            </section>
+    <div class="container-fluid">
+        <div class="fakeimg" style="height: 50px;"></div>
+    </div>
 
+    <div class="p-3 night-mode" style="border-radius: 20px 20px 0 0;">
 
-            <h2>Heart</h2>
-
-Photography
-- img.photography_SanDiego_Lush
-Calisthenics/Breakdancing
-- img.dance_spring_show_awesome
-
-Miscellaneous Art
-- img.misc_horse_charcoal_drawing
-Favorites
-- favorites_music_artist
-In The Works
-- img.music_in_the_works
-
-            <!-- Heart -->
-            <section class="flex-wrap pt-5" id="heart">
-                <div class="row">
-                    <h1 class="text-center">Heart</h1>
-                    <hr class="rounded">
-                    <div class="col-sm-4">
-                        <img src="Assets/Landing/music_arabic_ensemble_main.jpg" alt="">
-                    </div>
-                    <div class="col-sm-4">
-                        <img src="Assets/Landing/photography_SanDiego_Lush.jpg" alt="">
-                    </div>
-                    <div class="col-sm-4">
-                        <img src="Assets/Landing/dance_spring_show_awesome.JPG" alt="">
-                    </div>
-                    <div class="col-sm-4">
-                        <img src="Assets/Landing/misc_horse_charcoal_drawing.jpg" alt="">
-                    </div>
-                    <div class="col-sm-4">
-                        <img src="Assets/Landing/music_in_the_works.JPG" alt="">
-                    </div>
-                </div>
-            </section>
-<!-- 
-            <div class="container-fluid">
-                <div class="fakeimg" style="height: 100px;"></div>
-            </div> -->
-
-            <!-- Acknowledgements -->
-            <section class="container flex-wrap pt-5 col-10" id="acknowledgements">
-                <h1 class="text-center">Acknowledgments</h1>
+        <!-- Hand -->
+        <section class="img-fluid justify-content-md-center flex-wrap p-5" id="hand">
+            <div class="row">
+                <h1 class="text-center">Hand</h1>
                 <hr class="rounded">
-                <p>This portfolio would not have been possible without the generous feedback of my remarkable peers
-                    mentors, and friends.</p>
-                <p>My heartfelt thanks to <strong>Prof. Kim Hoffman, Pari Pradhan, Mark Schumacher, and Micheal
-                        Miller.</strong></p><br>
+                <div class="row">
+                    <!-- Frame Fixturing -->
+                    <div class="image cell col-sm-4" title="Page coming soon!">
+                        <img class="img-fluid" src="Assets/Landing/baja-fixturing-side-frame.png" id="cell" alt="">
+                    </div>
+                    <!-- Friends in SF -->
+                    <div class="cell col-sm-4">
+                        <img class="img-fluid cell" src="Assets/Landing/jour-article-hero.png" id="cell" alt="">
+                    </div>
+                    <!-- H2H -->
+                    <div class="image cell col-sm-4" title="Page coming soon!">
+                        <img class="img-fluid cell" src="Assets/Landing/h2h-website-main.png" id="cell" alt="">
+                    </div>
+                </div>
 
-                <h5>Special Thanks to:</h5>
-                <hr>
-                <p><strong>Prof. Andrew Skwish</strong> for your infinite wisdom in simplifying the arduous task of
+                <div class="row">
+                    <!-- Frame Fixturing -->
+                    <div class="col-sm-4">
+                        <h3 style="margin-top: 10px; padding: 10px; text-align: center;">SAE Baja Frame Fixturing</h3>
+                        <div class="row">
+                            <img src="Assets/Thumbnails/solidworks-red.png" class="logo" alt="">
+                        </div>
+                        <p>Modeled a frame fixturing for Northwestern Baja. It is an integral component for welding the
+                            frame of a car.</p>
+                    </div>
+                    <!-- Friends in SF -->
+                    <div class="col-sm-4">
+                        <h3 style="margin-top: 10px; padding: 10px; text-align: center;">Journalism: Visual Storytelling
+                        </h3>
+                        <div class="row">
+                            <img src="Assets/Thumbnails/html_5.svg" class="logo" alt="">
+                            <img src="Assets/Thumbnails/css_3.svg" class="logo" alt="">
+                            <img src="Assets/Thumbnails/vs_code.svg" class="logo" alt="">
+                        </div>
+                        <p>During my time in the Northwestern Bay Area Immersion Program, I helped write an article
+                            about making friends in San Francisco and programmed the article's webpage, which you can
+                            see <a href="https://khalidjaris.github.io/Post-GradFriendMystery/" target="_blank"
+                                rel="noopener noreferrer">here</a>.</p>
+                    </div>
+                    <!-- H2H -->
+                    <div class="col-sm-4">
+                        <h3 style="margin-top: 10px; padding: 10px; text-align: center;">How2Help</h3>
+                        <div class="row">
+                            <img src="Assets/Thumbnails/figma-colored.png" class="logo" alt="">
+                        </div>
+                        <p>How can we make it easy, accessible, and enjoyable to help while educating people?</p>
+                        <p><strong>How2Help</strong> is an idea for a platform that answers that question.</p>
+                        </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+                <!-- Manufacturing -->
+                <!-- <figure class="col-sm-4">
+                    <img class="img-fluid" src="Assets/Landing/manufacturing-sand-casting.jpeg" id="cell" alt="">
+                </figure> -->
+
+                <!-- Programming -->
+                <!-- <figure class="cell col-sm-4">
+                    <img class="img-fluid" src="Assets/Landing/coding-angry-birds-diagram.jpg" id="cell" alt="">
+                </figure> -->
+                <!-- RHIT -->
+                <!-- <figure class="cell col-sm-4">
+                    <img class="img-fluid cell" src="Assets/Landing/rhit-optics-poster.jpg" id="cell" alt="">
+                </figure> -->
+
+            </div>
+        </section>
+
+        <!-- Heart -->
+        <section class="img-fluid justify-content-md-center flex-wrap p-5" id="heart">
+            <img src="Assets/Landing/art-is-shapes.png" style="position: absolute; left: 0;" alt="">
+            <div class="row">
+                <h1 class="text-center">Heart</h1>
+                <hr class="rounded">
+                <div class="image cell col-sm-4" title="Page coming soon!">
+                    <img src="Assets/Landing/music-arabic-ensemble-main.jpg" class="img-fluid" id="cell" alt="">
+                </div>
+                <div class="image cell col-sm-4" title="Page coming soon!">
+                    <img src="Assets/Landing/photography-san-diego-lush.jpg" class="img-fluid" id="cell" alt="">
+                </div>
+                <div class="image cell col-sm-4" title="Page coming soon!">
+                    <img src="Assets/Landing/poetry-a-thought-that-readily-slips-away-v1.png" class="img-fluid"
+                        id="cell" alt="">
+                </div>
+
+                <!-- <figure class="col-sm-4">
+                    <img src="Assets/Landing/dance-spring-show-awesome.JPG" class="img-fluid" id="cell" alt="">
+                </figure>
+                <figure class="col-sm-4">
+                    <img src="Assets/Landing/misc-horse-charcoal-drawing.jpg" class="img-fluid" id="cell" alt="">
+                </figure>
+                <div class="col-sm-4">
+                    <img src="Assets/Landing/music-in-the-works.JPG" class="img-fluid" id="cell" alt="">
+                </figure> -->
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3 style="margin-top: 10px; padding: 10px; text-align: center;">Music</h3>
+                </div>
+                <div class="col-sm-4">
+                    <h3 style="margin-top: 10px; padding: 10px; text-align: center;">Photography</h3>
+                </div>
+                <div class="col-sm-4">
+                    <h3 style="margin-top: 10px; padding: 10px; text-align: center;">Writing and Poetry</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Acknowledgements -->
+        <section class="container flex-wrap pt-5 col-10" id="acknowledgements">
+            <h1 class="text-center">Acknowledgments</h1>
+            <hr class="rounded">
+            <p>This portfolio would not have been possible without the generous feedback of my remarkable peers
+                mentors, and friends.</p>
+            <p>My heartfelt thanks to <strong>Prof. Kim Hoffman, Pari Pradhan, Mark Schumacher, and Micheal
+                    Miller.</strong></p><br>
+
+            <h5>Special Thanks to:</h5>
+            <br>
+            <ul id="acknowledgements">
+                <p><strong><a href="https://skwish.com/">Prof. Andrew Skwish</a></strong> for your infinite wisdom in
+                    simplifying the arduous task of
                     putting your identity on a page.</p>
                 <p><strong>Prof. Michael Peshkin</strong> for reminding me that everything in the world is fascinating.
                 </p>
-                <p><strong>Carolyn Cunningham, Yusra Dokum, and Prof. Kevin Fort</strong>, for your guidance through the
+                <p><strong>Carolyn Cunningham, Yusra Dokum, and <a
+                            href="https://open.spotify.com/artist/39aVoVtOa2M9D4rY05JEgg?si=CBuRQ2OGR_-VDBHv7xWS9A">Prof.
+                            Kevin Fort</a></strong>, for your guidance through the
                     ravishing world of music.</p>
                 <p><strong>Yousef Abdo and Mohammed Hameed,</strong> for keeping me afloat during the darkest times and
                     making them
@@ -286,43 +409,77 @@ In The Works
                 <p><strong>Pam Daniels and Jason Yuan,</strong> for teaching me how to walk the path of the
                     unconventional.</p>
                 <p><strong>Stephen Dalvet,</strong> for instilling clarity of thought in me.</p>
-            </section>
+            </ul>
+        </section>
 
-            <!-- <div class="container-fluid">
-                <div class="fakeimg" style="height: 100px;"></div>
-            </div> -->
+        <div class="container-fluid">
+            <div class="fakeimg" style="height: 100px;"></div>
+        </div>
 
-            <!-- Contact -->
-            <section class="text-center justify-content-md-center p-5 m-3" id="contact">
-                <div>
-                    <h3>What now?</h3>
-                    <h2>Get In Touch</h2>
-                    <p>Interested in the works? Collaborating? Chatting? Let me know!<br>
-                        (I'm always looking for my next adventure.)</p>
-                    <button type="button" name="" id="" class="btn btn-outline-secondary">Say Hello</button>
-                </div>
-            </section>
+        <!-- Contact -->
+        <section class="img-fluid text-center justify-content-md-center p-5 m-3" id="contact">
+            <div>
+                <h3>What now?</h3>
+                <h1>Get In Touch</h1>
+                <br>
+                <p>Interested in the works? Collaborating? Chatting? Let me know!<br>
+                    (I'm always looking for my next adventure.)</p>
+                <!-- <button type="button" name="" id="" class="btn btn-outline-secondary">Say Hello</button> -->
+            </div>
+
+            <div class="container-fluid">
+                <div class="fakeimg" style="height: 20px;"></div>
+            </div>
 
             <!-- Footer -->
-            <footer class="container p-3 text-center">
+            <footer class="container p-3 text-center justify-content-between">
                 <div class="row flex-wrap">
-                    <div class="inline col-sm-4 mt-2 mb-2">
-                        <img class="ms-2 me-2" src="Assets/Thumbnails/github-black.png" alt="" style="height: 30px;">
-                        <img class="ms-2 me-2" src="Assets/Thumbnails/instagram-black.png" alt="" style="height: 30px;">
-                        <img class="ms-2 me-2" src="Assets/Thumbnails/spotify-black.png" alt="" style="height: 30px;">
-                        <img class="ms-2 me-2" src="Assets/Thumbnails/linkedin-black.png" alt="" style="height: 30px;">
-                        <img class="ms-2 me-2" src="Assets/Thumbnails/youtube-black.png" alt="" style="height: 25px;">
+                    <div class="" style="padding: 20px;">
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/khalidjaris/" target="_blank" rel="noopener noreferrer">
+                            <img src="Assets/Thumbnails/instagram-white.png" alt="" id="icon">
+                        </a>
+                        <!-- Github -->
+                        <a href="https://github.com/Khalidjaris" target="_blank" rel="noopener noreferrer">
+                            <img src="Assets/Thumbnails/github-white.png" alt="" id="icon">
+                        </a>
+                        <!-- Spotify -->
+                        <a href="https://open.spotify.com/artist/6yO0RxJLJP0nNphhagcaB7?si=xy4tjk4iQGq7uxskWhRf8A"
+                            target="_blank" rel="noopener noreferrer">
+                            <img src="Assets/Thumbnails/spotify-white.png" alt="" id="icon">
+                        </a>
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/khalidjaris/" target="_blank" rel="noopener noreferrer">
+                            <img src="Assets/Thumbnails/linkedin-white.png" alt="" id="icon">
+                        </a>
+                        <!-- YouTube -->
+                        <a href="https://www.youtube.com/channel/UCmlBIN46mO8T6JfsBk_LkWQ?pbjreload=102" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="Assets/Thumbnails/youtube-white.png" alt="" id="icon">
+                        </a>
                     </div>
-                    <p class="sub col-sm-4" text-center>Designed using Figma and built using Bootstrap 5.</p>
-                    <p class="sub col-sm-4" text-end>khalidsiraj2025@u.northwestern.edu</p>
+                    <p>khalidsiraj2025@u.northwestern.edu</p>
+                    <p class="sub">Designed using <strong>Figma</strong> and built using <strong>Bootstrap 5</strong>.
+                    </p>
+                </div>
+                <div>
+                    <a href="#navbar">
+                        <img src="Assets/Thumbnails/arrow-up-white.svg" alt="" style="width: 20px;">
+                    </a>
                 </div>
             </footer>
 
+        </section>
 
-            <!-- Bootstrap 5.3.2 JS -->
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-                crossorigin="anonymous"></script>
+    </div>
+
+    <!-- Bootstrap 5.3.2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- Pyscript -->
+    <!-- <script defer src="https://pyscript.net/alpha/pyscript.js"></script> -->
 </body>
 
 </html>

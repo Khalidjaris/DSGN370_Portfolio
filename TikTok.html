@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing</title>
+  <title>TikTok</title>
 
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="style.css">
@@ -57,17 +57,10 @@
       font-size: smaller;
     }
 
-    .hover-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      color: white;
-      z-index: 2;
-    }
-
     .fakeimg {
       height: 200px;
       /* background: #aaa; */
+      border-radius: 25px;
       background-color: rgb(21, 8, 8);
       margin: 1em 0;
     }
@@ -80,7 +73,7 @@
   <header class="header container p-3" id="navbar" style="color: #27ADEA;">
     <div class="d-flex justify-content-between align-items-center">
       <a href="Landing.html">
-        <img src="Assets/Thumbnails/logo3.svg" alt="" style="height: 40px;">
+        <img src="Assets/Thumbnails/logo3.svg" alt="" class="img-fluid" style="height: 40px;">
       </a>
       <div class="d-flex justify-content-between align-items-center">
         <a href="Hand.html" style="padding: 10px;">Hand</a>
@@ -92,7 +85,7 @@
   </header>
 
   <!-- HEADER -->
-  <div class="container flex-wrap mt-5 inline">
+  <div class="container flex-wrap mt-5 inline mb-4">
     <div class="row">
 
       <!-- Summary -->
@@ -112,8 +105,8 @@
       </div>
 
       <!-- Image -->
-      <div class="col-5 justify-content-center" style="height: 500px; z-index: -1;">
-        <video src="Assets/TikTok/TikTok_Hero.mov" style="width: 100%; overflow: hidden;" autoplay muted loop></video>
+      <div class="col-5 justify-content-center" class="img-fluid" style="overflow: hidden; height: 70vh;">
+        <video src="Assets/TikTok/TikTok-Hero.mov" class="img-fluid" style="width: 100%; overflow: hidden;" autoplay muted loop></video>
       </div>
 
       <!-- Details -->
@@ -245,7 +238,10 @@
             <div class="col-4">
               <h4>Accessibility</h4>
               <!-- <div class="container-fluid"><div class="fakeimg" style="height: 100px;"></div></div> -->
-              <video src="Assets/TikTok/Walkthrough/TikTok_Type.mov" controls loop muted></video>
+              <!-- <div class="container"> -->
+                <!-- <div class="bottom-left">Bottom Left</div> -->
+                <video src="Assets/TikTok/Walkthrough/TikTok-Type.mov" class="img-fluid" onmouseover="this.play();" onmouseout="this.pause()" loop muted></video>
+              <!-- </div> -->
               <p class="sub">You can interact with AdAssistant with both speech and type.</p>
               <p class="sub"></p>
             </div>
@@ -253,18 +249,16 @@
             <div class="col-4">
               <h4>Consistency</h4>
               <!-- <div class="container-fluid"><div class="fakeimg" style="height: 100px;"></div></div> -->
-              <video src="Assets/TikTok/Walkthrough/TikTok_Roam.mov" controls loop muted></video>
-              <p class="sub">The overlay pop-up blends with the interface, allowing for easy navigation into and out of
-                the AdAssistant.</p>
-              <p class="sub">Revisiting the ad becomes easy this way.</p>
+              <video src="Assets/TikTok/Walkthrough/TikTok-Roam.mov" class="img-fluid" onmouseover="this.play();" onmouseout="this.pause()" loop muted></video>
+              <p class="sub">The overlay pop-up blends with the interface, so revisiting the ad becomes easy.</p>
             </div>
 
             <div class="col-4">
               <h4>Ease of Use</h4>
               <!-- <div class="container-fluid"><div class="fakeimg" style="height: 100px;"></div></div> -->
-              <video src="Assets/TikTok/Walkthrough/TikTok_Suggested.mov" controls loop muted></video>
-              <p class="sub">Suggested questions are included and answers are short.</p>
-              <p class="sub">Entering and exiting AdAssistant is also a swipe away.</p>
+              <video src="Assets/TikTok/Walkthrough/TikTok-Suggested.mov" class="img-fluid" onmouseover="this.play();" onmouseout="this.pause()" loop muted></video>
+              <p class="sub">Suggested questions are included and answers are short, as is the time it takes to navigate in and out of AdAssistant.</p>
+              
             </div>
 
           </div>
@@ -273,7 +267,7 @@
 
       <!-- Visual -->
       <div class="col-5 inline">
-        <video src="Assets/TikTok/Walkthrough/TikTok_Voice.mov" autoplay muted loop></video>
+        <video src="Assets/TikTok/Walkthrough/TikTok-Voice.mov" class="img-fluid" autoplay muted loop></video>
       </div>
     </div>
 
@@ -287,12 +281,12 @@
         <div class="col-7">
           <h3 class="text-center">Attributes</h3>
           <hr class="rounded">
-          <img src="Assets/TikTok/TikTok_attributes.png" alt="">
+          <img src="Assets/TikTok/TikTok-attributes.png" class="img-fluid" alt="">
         </div>
         <div class="col-5">
           <h3 class="text-center">Benefits</h3>
           <hr class="rounded">
-          <img src="Assets/TikTok/TikTok_Benefits.png" alt="">
+          <img src="Assets/TikTok/TikTok-Benefits.png" class="img-fluid" alt="">
         </div>
       </div>
     </div>
@@ -305,8 +299,8 @@
       <div class="row container">
 
         <!-- Takeaways -->
-        <div class="col">
-          <h3 class="text-center" style="margin-top: 1em;">TAKEAWAYS</h3>
+        <div class="col p-5">
+          <h3 class="text-center">TAKEAWAYS</h3>
           <hr class="rounded">
           <ul>
             <li>Understood what good mockups entail: a good experience. It's not about getting as close to the final
@@ -315,7 +309,7 @@
             <li>Experienced working with a social media giant; I better understand their values. I also gained a better
               idea of why things are designed the way they are (I notice more!)</li>
             <br>
-            <li>Learned how to quickly make high-fidelity mockups–and in the process, how to ask the right questions.
+            <li>Learned how to make high-fidelity mockups quickly–and, in the process, how to ask the right questions.
             </li>
             <br>
             <li>Worked with a diverse group of people (i.e. Marketing, Journalism, Sociology, Design, Biology majors).
@@ -324,8 +318,8 @@
         </div>
         
         <!-- Responsibilities -->
-        <div class="col">
-          <h3 class="text-center" style="margin-top: 1em;">RESPONSIBILITIES</h3>
+        <div class="col p-5">
+          <h3 class="text-center">RESPONSIBILITIES</h3>
           <hr class="rounded">
           <li>Developing 1 of 4 initial mockups</li>
           <li>Researching YouTube as a case study</li>

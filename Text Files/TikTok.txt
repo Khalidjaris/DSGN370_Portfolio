@@ -114,7 +114,7 @@ Using a overlay pop-up screen blends it with the interface and allows for easy n
 and out of the AdAssistant. Revisiting the ad becomes easy this way.
 vid.TikTok_Type
 
-–––––img.TikTok_Attributes
+img.TikTok_Attributes
 img.TikTok_Benefits
 
 --
