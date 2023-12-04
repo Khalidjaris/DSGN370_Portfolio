@@ -172,7 +172,7 @@ h3 {
   line-height: 15.4px;
 }
 
-p {
+ul, li, p {
   font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
   font-size: 18px;
   font-style: normal;
@@ -197,4 +197,9 @@ pre {
   font-variant: normal;
   font-weight: 400;
   line-height: 18.5714px;
+}
+
+#icon {
+  height: 30px;
+  margin: 2px 4px;
 }

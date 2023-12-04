@@ -61,7 +61,7 @@
       height: 200px;
       /* background: #aaa; */
       border-radius: 25px;
-      background-color: rgb(21, 8, 8);
+      /* background-color: rgb(21, 8, 8); */
       margin: 1em 0;
     }
   </style>
@@ -69,19 +69,31 @@
 
 <body>
 
-  <!-- Navigation Bar Start -->
-  <header class="header container p-3" id="navbar" style="color: #27ADEA;">
-    <div class="d-flex justify-content-between align-items-center">
-      <a href="Landing.html">
-        <img src="Assets/Thumbnails/logo3.svg" alt="" class="img-fluid" style="height: 40px;">
-      </a>
-      <div class="d-flex justify-content-between align-items-center">
-        <a href="Hand.html" style="padding: 10px;">Hand</a>
-        <a href="Heart.html" style="padding: 10px;">Heart</a>
-        <a style="padding: 10px;">|</a>
-        <a href="#contact" style="padding: 10px;">Contact</a>
+    <!-- Navigation Bar Start -->
+    <header class="header container p-3" id="navbar">
+      <div class="d-flex justify-content-between align-items-center" style="color: black !important;">
+          <a href="Landing.html">
+              <div class="bg" style="border-radius: 15px; background-color: azure;">
+                  <img src="Assets/Thumbnails/logo2-2.svg" style="padding: 10px; width: 60px; height: 60px;" alt="">
+              </div>
+              <!-- <img src="Assets/Thumbnails/logo3.svg" alt="" style="height: 40px;"> -->
+          </a>
+          <ul class="nav nav-underline">
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#hand"
+                      style="color: whitesmoke !important;"><strong>Hand</strong></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#heart" style="color: whitesmoke !important;"><strong>Heart</strong></a>
+              </li>
+              <li class="nav-item">
+                  <hr width="1" size="img-fluid">
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#contact" style="color: whitesmoke !important;"><strong>Contact</strong></a>
+              </li>
+          </ul>
       </div>
-    </div>
   </header>
 
   <!-- HEADER -->
@@ -90,6 +102,9 @@
 
       <!-- Summary -->
       <div class="col-4">
+        <div style="position: absolute; z-index: -1; top: 150px; left: 0; height: 100vh; border-radius: 0 0 15px 15px;">
+          <img src="Assets/TikTok/tiktok-background.png" style="opacity: 40%; z-index: -1;" alt="">
+        </div>
         <h1>TikTok AI AdAssistant</h1>
         <h3 style="opacity: 80%;">Reimagining advertising on TikTok</h3>
         <p>AdAssistant enables users to ask questions about TikTok ads easily.</p>
@@ -114,7 +129,7 @@
         <div class="m-3">
           <h3>Date</h3>
           <hr>
-          <p>Januaray-March 2023</p>
+          <p>January-March 2023</p>
         </div>
         <!-- <br> -->
         <div class="m-3">
@@ -149,31 +164,31 @@
   <div class="container flex-wrap pt-5 col-8">
     <h3 class="text-center">Problem</h3>
     <hr class="rounded">
+
     <div class="container-fluid">
-      <div class="fakeimg" style="height: 100px;"></div>
+      <div class="fakeimg" style="height: 200px;"></div>
     </div>
 
-    <h3 class="text-center">“How might we make interactions with advertisements feel more <strong>organic</strong> and
+    <h2 class="text-center">“How might we make interactions with advertisements feel more <strong>organic</strong> and
       <strong>transparent</strong>?”
     </h3>
   </div>
 
   <div class="container-fluid">
-    <div class="fakeimg" style="height: 50px;"></div>
+    <div class="fakeimg" style="height: 200px;"></div>
   </div>
 
   <div class="container text-center">
-    <div class="row">
-
+    <div class="row" style="height: 200px;">
       <!-- Top Quotes -->
       <div class="col align-self-start">
-        <p>“Influencers aren’t always honest when something is an ad.”</p>
+        <h3>“Influencers aren’t always honest when something is an ad.”</h3>
       </div>
       <div class="col align-self-end">
-        <p>“Transparency.”</p>
+        <h3 style="font-size: 3em;">“Transparency.”</h3>
       </div>
       <div class="col align-self-center">
-        <p>"Since videos on TikTok are really short, I usually don’t understand what they’re promoting."</p>
+        <h3>"Since videos on TikTok are really short, I usually don’t understand what they’re promoting."</h3>
       </div>
     </div>
 
@@ -183,8 +198,10 @@
 
     <!-- Keeping -->
     <div class="row">
-      <div class="text-center">
-        <h1>Keeping these points in mind...</h1>
+      <div class="text-center position-relative">
+        <img src="Assets/TikTok/tiktok-keeping-in-mind.svg" alt="">
+        <!-- <h1 style="position: absolute; top: 25%; left: 25%; color: greenyellow;">Keeping these points in mind...</h1> -->
+        <!-- <h1>Keeping these points in mind...</h1> -->
       </div>
     </div>
 
@@ -193,15 +210,15 @@
     </div>
 
     <!-- Bottom Quotes -->
-    <div class="row">
-      <div class="col align-self-end">
-        <p>“Ads should feel more natural.”</p>
+    <div class="row" style="height: 200px;">
+      <div class="col align-self-center">
+        <h3>“Ads should feel more natural.”</h3>
       </div>
       <div class="col align-self-start">
-        <p>"I just don't want to leave the app to learn more about a product."</p>
+        <h3>"I just don't want to leave the app to learn more about a product."</h3>
       </div>
-      <div class="col align-self-center">
-        <p>"I wish ads were more like a conversation, not a pitch."</p>
+      <div class="col align-self-end">
+        <h3>"I wish ads were more like a conversation, not a pitch."</h3>
       </div>
     </div>
   </div>
@@ -213,6 +230,10 @@
   <!-- Solution -->
   <div class="container flex-wrap pt-5 col-10">
 
+    <div style="position: absolute; z-index: -1; top: 270vh; left: 0; height: 100vh; border-radius: 0 0 15px 15px;">
+      <img src="Assets/TikTok/tiktok-background-tall.png" style="opacity: 20%; z-index: -1;" alt="">
+    </div>
+
     <!-- Header -->
     <h3 class="text-center">Solution</h3>
     <hr class="rounded">
@@ -223,8 +244,7 @@
         <h1>AdAssistant</h1>
         <h3>AI-powered chatbot that makes ads make sense.</h3>
         <br>
-        <p>Advertisers aim for ads that are short and impressionable, meaning they must omit details. How would you
-          learn more about the product if you were interested?</p>
+        <p>Advertisers aim for short and impressionable ads, meaning they must omit details. How would you learn more about the product if you were interested?</p>
         <p><strong>AdAssistant</strong> is the answer. It would be a primary source of information.</p>
 
         <!-- Features -->
@@ -250,14 +270,14 @@
               <h4>Consistency</h4>
               <!-- <div class="container-fluid"><div class="fakeimg" style="height: 100px;"></div></div> -->
               <video src="Assets/TikTok/Walkthrough/TikTok-Roam.mov" class="img-fluid" onmouseover="this.play();" onmouseout="this.pause()" loop muted></video>
-              <p class="sub">The overlay pop-up blends with the interface, so revisiting the ad becomes easy.</p>
+              <p class="sub">The overlay pop-up blends with the interface, making revisiting the ad easy.</p>
             </div>
 
             <div class="col-4">
               <h4>Ease of Use</h4>
               <!-- <div class="container-fluid"><div class="fakeimg" style="height: 100px;"></div></div> -->
               <video src="Assets/TikTok/Walkthrough/TikTok-Suggested.mov" class="img-fluid" onmouseover="this.play();" onmouseout="this.pause()" loop muted></video>
-              <p class="sub">Suggested questions are included and answers are short, as is the time it takes to navigate in and out of AdAssistant.</p>
+              <p class="sub">We included suggested questions, and the answers are short, as is the time it takes to navigate in and out of AdAssistant.</p>
               
             </div>
 
@@ -286,7 +306,7 @@
         <div class="col-5">
           <h3 class="text-center">Benefits</h3>
           <hr class="rounded">
-          <img src="Assets/TikTok/TikTok-Benefits.png" class="img-fluid" alt="">
+          <img src="Assets/TikTok/TikTok-Benefits.png" class="img-fluid" style="border-radius: 30px;" alt="">
         </div>
       </div>
     </div>
@@ -303,16 +323,16 @@
           <h3 class="text-center">TAKEAWAYS</h3>
           <hr class="rounded">
           <ul>
-            <li>Understood what good mockups entail: a good experience. It's not about getting as close to the final
-              product as possible but designing interactive experiences that emphasize certain features.</li>
-            <br>
-            <li>Experienced working with a social media giant; I better understand their values. I also gained a better
-              idea of why things are designed the way they are (I notice more!)</li>
-            <br>
-            <li>Learned how to make high-fidelity mockups quickly–and, in the process, how to ask the right questions.
+            <li>Understood what good mockups entail: a good experience. It's more than getting as close to the final product as possible; it's about designing interactive experiences emphasizing certain features.
             </li>
             <br>
-            <li>Worked with a diverse group of people (i.e. Marketing, Journalism, Sociology, Design, Biology majors).
+            <li>Experienced working with a social media giant, now better understanding their values. I also better understood why things are designed the way they are (I notice more!)
+            </li>
+            <br>
+            <li>Learned how to quickly make high–fidelity mockups and, in the process, ask the right questions.
+            </li>
+            <br>
+            <li>I worked with a diverse group (i.e., marketing, journalism, sociology, design, and biology majors).
             </li>
           </ul>
         </div>
@@ -331,20 +351,43 @@
     </div>
   </div>
 
-  <!-- Footer -->
-  <footer class="container p-3 text-center">
-    <div class="row flex-wrap">
-      <div class="inline col-sm-4 mt-2 mb-2">
-        <img class="ms-2 me-2" src="Assets/Thumbnails/github-white.png" alt="" style="height: 30px;">
-        <img class="ms-2 me-2" src="Assets/Thumbnails/instagram-white.png" alt="" style="height: 30px;">
-        <img class="ms-2 me-2" src="Assets/Thumbnails/spotify-white.png" alt="" style="height: 30px;">
-        <img class="ms-2 me-2" src="Assets/Thumbnails/linkedin-white.png" alt="" style="height: 30px;">
-        <img class="ms-2 me-2" src="Assets/Thumbnails/youtube-white.png" alt="" style="height: 25px;">
-      </div>
-      <p class="sub col-sm-4" text-center>Designed using Figma and built using Bootstrap 5.</p>
-      <p class="sub col-sm-4" text-end>khalidsiraj2025@u.northwestern.edu</p>
-    </div>
-  </footer>
+            <!-- Footer -->
+            <footer class="container p-3 text-center justify-content-between">
+              <div class="row flex-wrap">
+                  <div class="" style="padding: 20px;">
+                      <!-- Instagram -->
+                      <a href="https://www.instagram.com/khalidjaris/" target="_blank" rel="noopener noreferrer">
+                          <img src="Assets/Thumbnails/instagram-white.png" alt="" id="icon">
+                      </a>
+                      <!-- Github -->
+                      <a href="https://github.com/Khalidjaris" target="_blank" rel="noopener noreferrer">
+                          <img src="Assets/Thumbnails/github-white.png" alt="" id="icon">
+                      </a>
+                      <!-- Spotify -->
+                      <a href="https://open.spotify.com/artist/6yO0RxJLJP0nNphhagcaB7?si=xy4tjk4iQGq7uxskWhRf8A"
+                          target="_blank" rel="noopener noreferrer">
+                          <img src="Assets/Thumbnails/spotify-white.png" alt="" id="icon">
+                      </a>
+                      <!-- LinkedIn -->
+                      <a href="https://www.linkedin.com/in/khalidjaris/" target="_blank" rel="noopener noreferrer">
+                          <img src="Assets/Thumbnails/linkedin-white.png" alt="" id="icon">
+                      </a>
+                      <!-- YouTube -->
+                      <a href="https://www.youtube.com/channel/UCmlBIN46mO8T6JfsBk_LkWQ?pbjreload=102" target="_blank"
+                          rel="noopener noreferrer">
+                          <img src="Assets/Thumbnails/youtube-white.png" alt="" id="icon">
+                      </a>
+                  </div>
+                  <p>khalidsiraj2025@u.northwestern.edu</p>
+                  <p class="sub">Designed using <strong>Figma</strong> and built using <strong>Bootstrap 5</strong>.
+                  </p>
+              </div>
+              <div>
+                  <a href="#navbar">
+                      <img src="Assets/Thumbnails/arrow-up-white.svg" alt="" style="width: 20px;">
+                  </a>
+              </div>
+          </footer>
 
   <!-- Bootstrap 5.3.2 JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
