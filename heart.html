@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart</title>
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap 5.3.2 Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;1,400&family=Montserrat:ital,wght@0,100;0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            background-color: rgb(21, 8, 8);
+            color: whitesmoke;
+            position: relative;
+            max-width: 100%;
+        }
+
+        .day-mode {
+            color: black;
+            background-color: white;
+        }
+
+        .day-mode p {
+            font-family: 'Alegreya', serif;
+            font-weight: 500;
+            font-size: clamp(0.9em, 10vh, 1em);
+            line-height: 2;
+        }
+
+        .day-mode h2 {
+            font-family: 'Alegreya', serif;
+            /* background-color: blue; */
+            height: auto;
+            font-weight: 400;
+            text-align: left;
+            font-size: 40px;
+            font-style: italic;
+        }
+
+        .day-mode h3 {
+            font-family: 'Alegreya', serif;
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        h1 {
+            font-weight: bold;
+        }
+
+        h3 {
+            font-size: x-large;
+        }
+
+        h4 {
+            text-align: center;
+        }
+
+        a {
+            color: #27ADEA;
+        }
+
+        hr {
+            height: 2px;
+            background-color: whitesmoke;
+            border: none;
+        }
+
+        #details {
+            opacity: 80%;
+            font-size: smaller;
+        }
+
+        .fakeimg {
+            height: 200px;
+            width: auto;
+            /* background: #aaa; */
+            border-radius: 25px;
+            /* background-color: rgb(21, 8, 8); */
+            margin: 1em 0;
+        }
+
+        /* .el {
+            width: 100vw;
+            height: 100vh;
+            padding: 1rem;
+
+            background-image: url(https://images.unsplash.com/photo-1528287942171-fbe365d1d9ac?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&w=1200&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            mask-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/sun.svg);
+            mask-image: rect(10px, 20px, 30px, 40px);
+            mask-size: 100vmin;
+            mask-repeat: no-repeat;
+            mask-position: center;
+        } */
+
+        a:link {
+            text-decoration: none;
+        }
+
+        .tab {
+            display: inline-block;
+            margin-left: 40px;
+        }
+
+        #cell-landscape {
+            height: 280px;
+            object-fit: cover;
+            object-position: center center;
+            width: 100%;
+            object-fit: cover;
+            filter: blur(3px);
+        }
+
+        audio {
+            margin: auto;
+            width: 100%;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar Start -->
+    <header class="header container p-3" id="navbar">
+        <div class="d-flex justify-content-between align-items-center" style="color: black !important;">
+            <a href="index.html">
+                <div class="bg" style="border-radius: 15px; background-color: azure;">
+                    <img src="Assets/Thumbnails/logo2-2.svg" style="padding: 10px; width: 60px; height: 60px;" alt="">
+                </div>
+            </a>
+            <ul class="nav nav-underline">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#featured"
+                        style="color: whitesmoke !important;"><strong>Featured</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html#hand"
+                        style="color: whitesmoke !important;"><strong>Hand</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html#heart"
+                        style="color: whitesmoke !important;"><strong>Heart</strong></a>
+                </li>
+                <li class="nav-item">
+                    <hr width="1" size="img-fluid">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#contact"
+                        style="color: whitesmoke !important;"><strong>Contact</strong></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Music Compositions -->
+    <section class="justify-content-md-center flex-wrap p-5" id="music-compositions">
+        <h1 class="text-center">Original Compositions</h1>
+        <hr class="rounded">
+        <div class="row justify-content-center flex-wrap">
+            <!-- <div class="el col-sm-6 p-2">
+            </div> -->
+            <!-- Ragtime -->
+            <div class="col-sm-6 p-2">
+                <div class="image-center">
+                    <img class="img-fluid" src="Assets/Heart/Photography/photography-petra-ceiling.jpg" id="cell-landscape" alt="">
+                    <div class="text-image-center">
+                        <h1 class="alegreya-head text-center">Ragtime</h1>
+                        <h2 class="text-center" style="margin: 0 0 0 0;">2021</h1>
+                    </div>
+                </div>
+                <audio src="Assets/Heart/Recordings/music-ragtime.mp3" style="display: block;" controls ></audio>
+            </div>
+            <!-- Rahil Ghadan -->
+            <div class="col-sm-6 p-2">
+                <div class="image-center">
+                    <img class="img-fluid" src="Assets/Heart/Photography/photography-blue-white-museum.jpg" id="cell-landscape" alt="">
+                    <div class="text-image-center">
+                        <h1 class="alegreya-head text-center">Rahil Ghadan</h1>
+                        <h2 class="text-center" style="margin: 0 0 0 0;">2021</h1>
+                    </div>
+                    <!-- <p class="text-image-center">Ragtime 2021</p> -->
+                </div>
+                <audio src="Assets/Heart/Recordings/music-rahil-ghadan.mp3" style="display: block;" controls></audio>
+            </div>
+            <!-- Katada -->
+            <!-- <div class="col-sm-6 p-2">
+                <img class="img-fluid" src="Assets/Heart/Photography/photography-lakefill.jpg" id="cell-landscape" alt="">
+                <audio src="Assets/Heart/Recordings/music-katada.mp3" style="display: block;" controls></audio>
+            </div> -->
+            <!-- Lullaby of Remembrance -->
+            <div class="col-sm-6 p-2">
+                <div class="image-center">
+                    <img class="img-fluid" src="Assets/Heart/Photography/photography-sea.jpg" id="cell-landscape" alt="">
+                    <div class="text-image-center">
+                        <h1 class="alegreya-head text-center">Lullaby of Remembrance</h1>
+                        <h2 class="text-center" style="margin: 0 0 0 0;">2022</h1>
+                    </div>
+                </div>
+                <audio src="Assets/Heart/Recordings/music-lullaby-of-remembrance.mp3" style="display: block;" controls></audio>
+            </div>
+            <!-- Waltz of Stained Glass -->
+            <div class="col-sm-6 p-2">
+                <div class="image-center">
+                    <img class="img-fluid" src="Assets/Heart/Photography/photography-chapel-of-glass.jpg" id="cell-landscape" alt="">
+                    <div class="text-image-center">
+                        <h1 class="alegreya-head text-center">Waltz of Stained Glass</h1>
+                        <h2 class="text-center" style="margin: 0 0 0 0;">2023</h1>
+                    </div>
+                </div>
+                <audio src="Assets/Heart/Recordings/music-waltz-of-stained-glass.m4a" style="display: block;" controls></audio>
+            </div>
+        </div>
+    </section>
+
+    <!-- <div class="fakeimg"></div> -->
+
+    <!-- Music Production -->
+    <section class="justify-content-md-center flex-wrap p-5" id="music-compositions"> 
+        <h1 class="text-center">Music Production</h1>
+        <hr class="rounded">
+        <div class="row justify-content-center">
+            <!-- Burdened Blessings -->
+            <div class="col-sm-4 p-2">
+                <img class="container-fluid" src="Assets/Heart/music-burdened-blessings.jpeg" alt="">
+                <div class="row p-2" style="margin-top: 10px">
+                    <div class="col-sm-8">
+                        <h3><a href="https://www.youtube.com/watch?v=i-_NLlUHSKg" target="_blank"
+                            rel="noopener noreferrer">Burdened Blessings ft. Kareem
+                                Abualreesh</a></h3>
+                    </div>
+                    <div class="col-sm-4" style="text-align: right;">
+                        <p class="details">August 2021</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sa'at -->
+            <div class="col-sm-4 p-2">
+                <img class="container-fluid" src="Assets/Heart/music-sa'at.jpeg" alt="">
+                <div class="row p-2" style="margin-top: 10px">
+                    <div class="col-8">
+                        <h3><a href="https://www.youtube.com/watch?v=_-mpwySnU1A"target="_blank"
+                            rel="noopener noreferrer">Sa’at (Hours) ft. Siraj</a></h3>
+                    </div>
+                    <div class="col-sm-4" style="text-align: right;">
+                        <p class="details">March 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+        </div>
+    </section>
+
+    <!-- <div class="day-mode" style="height: 1px;"></div>
+    <br>
+    <div class="day-mode" style="height: 10px;"></div>
+    <br> -->
+
+    <!-- Poetry -->
+    <div class="p-3 day-mode" style="border-radius: 20px 20px 0 0;" id="poetry">
+        <h1 class="text-center mt-5">Poetry</h1>
+        <hr class="rounded">
+        <div class="fakeimg" style="height: 50px;"></div>
+
+        <!-- Stress -->
+        <div class="container offset-md-1 p-3">
+            <div>
+                <h3>January 31st, 2021</h3>
+                <h2>Stress</h2>
+                <p>The sky be held in arms of youthful souls<br>
+                    <span class="tab"></span>When hail breaks loose and shivers sting like fire.<br>
+                    In awe I gaze, an unforeseen snowstorm,<br>
+                    <span class="tab"></span>Of childhood past recalled moments retired.<br>
+                </p>
+
+                <p>May stress not seize, strangle, subdue my heart,<br>
+                    <span class="tab"></span>Instead propel thine dreams, be guiding me?<br>
+                    Those sleepless nights shed light, reflected shards<br>
+                    <span class="tab"></span>Of glass, broken windows, my eyes can’t see.<br>
+                </p>
+
+                <p>What pressure stand with I as to become<br>
+                    <span class="tab"></span>Of greatness if greatness not I they seek?<br>
+                    Of closed mind, they comply, give time, but hum<br>
+                    <span class="tab"></span>I shall, a melody not nearly bleak.<br>
+                </p>
+
+                <p>Be future plans past planned ensuring plight,<br>
+                    <span class="tab"></span>Unhaply breaks its hope unless I fight.<br>
+                </p>
+            </div>
+        </div>
+
+        <div class="day-mode" style="height: 50px;"></div>
+
+        <!-- A Thought that Readily Slips Away V1 -->
+        <div class="container p-3">
+            <div class="offset-md-6">
+                <h3>February 8th, 2023</h3>
+                <h2 style="font-size: 1.8em;">A Thought that Readily Slips Away V1</h2>
+                <p>It took me a second to realize<br>
+                    <span class="tab"></span>Her presence that I felt was in a dream.<br>
+                    My worries stall and in dismay I oblige<br>
+                    <span class="tab"></span>To the cunningness memory teems.<br>
+                </p>
+
+                <p>I believed for a long time that my dreaming mind is vacant,<br>
+                    <span class="tab"></span>And still I do. But that which I recalled can’t have been.<br>
+                    My past and present are all I have to attest, however, so salient <br>
+                    <span class="tab"></span>Is the falsehood of memory, I now a slave to it.<br>
+                </p>
+
+                <p>Vividly, so vividly had I eluded her eyes,<br>
+                    <span class="tab"></span>In living memory and occasional fantasy.<br>
+                    But I need not let the thought replay like a lullaby,<br>
+                    <span class="tab"></span>Simply perfect and bijou, so easy to carry.<br>
+                </p>
+
+                <p>I must let it slip into my subconscious,<br>
+                    <span class="tab"></span>And with the present, remember to be cautious.<br>
+                </p>
+            </div>
+        </div>
+
+        <div class="day-mode" style="height: 50px;"></div>
+
+        <!-- THE FLARE -->
+        <div class="container p-3">
+            <div>
+                <h3>April 9th, 2023</h3>
+                <h2>THE FLARE</h2>
+                <div class="row">
+                    <div class="col-5" style="width: auto; margin-bottom: 50px;">
+                        <p>A missing piece he says,<br>
+                            That there is a missing piece<br>
+                            A cause-effect explanation was too 'neat'<br>
+                            Am I more cryptic than it seems?<br></p>
+                        <br>
+                        <p>The flare kindled in seconds<br>
+                            And is still alive, to my surprise<br>
+                            What a wonderful thing, to have such<br>
+                            <span class="tab"></span>an intensity of parity surviving<br>
+                        </p>
+                        <br>
+                        <p>You read into me too deep at times<br>
+                            Better do you notice what gathered<br>
+                            <span class="tab"></span>dust in those shelves of files<br>
+                            To build a picture of mosaic and tile<br>
+                        </p>
+                    </div>
+
+                    <div class="col-1" style="margin: 0; width: auto;">
+                        <img src="Assets/Heart/the-flare-lines.png" alt="">
+                    </div>
+
+                    <div class="col-5" style="width: auto;">
+                        <p>There are details I’d rather omit<br>
+                            Parts of the story I continue to deal with<br>
+                            I’m “falling” into them, if you wish<br>
+                            <span class="tab"></span>to use such a word to describe it<br>
+                        </p>
+                        <br>
+                        <p>Would telling you that I’ve fallen<br>
+                            <span class="tab"></span>in love suffice?<br>
+                            Or are you alluding to another fragment?<br>
+                            One that slipped passed my pastiche?<br>
+                        </p>
+                        <br>
+                        <p>I’ve morphed to appease the<br>
+                            <span class="tab"></span>demands of a temporary circumstance<br>
+                            And do not know by what end I’ll morph back<br>
+                            Or if these changes will surface an aching of past<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="day-mode" style="height: 70px;"></div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="container p-3 text-center justify-content-between">
+        <div class="row flex-wrap">
+            <div class="" style="padding: 20px;">
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/khalidjaris/" target="_blank" rel="noopener noreferrer">
+                    <img src="Assets/Thumbnails/instagram-white.png" alt="" id="icon">
+                </a>
+                <!-- Github -->
+                <a href="https://github.com/Khalidjaris" target="_blank" rel="noopener noreferrer">
+                    <img src="Assets/Thumbnails/github-white.png" alt="" id="icon">
+                </a>
+                <!-- Spotify -->
+                <a href="https://open.spotify.com/artist/6yO0RxJLJP0nNphhagcaB7?si=xy4tjk4iQGq7uxskWhRf8A"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="Assets/Thumbnails/spotify-white.png" alt="" id="icon">
+                </a>
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/khalidjaris/" target="_blank" rel="noopener noreferrer">
+                    <img src="Assets/Thumbnails/linkedin-white.png" alt="" id="icon">
+                </a>
+                <!-- YouTube -->
+                <a href="https://www.youtube.com/channel/UCmlBIN46mO8T6JfsBk_LkWQ?pbjreload=102" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="Assets/Thumbnails/youtube-white.png" alt="" style="height: 25px" id="icon">
+                </a>
+            </div>
+            <p>khalidsiraj2025@u.northwestern.edu</p>
+            <p class="sub">Designed using <strong>Figma</strong> and built using <strong>Bootstrap 5</strong>.
+            </p>
+        </div>
+        <div>
+            <a href="#navbar">
+                <img src="Assets/Thumbnails/arrow-up-white.svg" alt="" style="width: 20px;">
+            </a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3.2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

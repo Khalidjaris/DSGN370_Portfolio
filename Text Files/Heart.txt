@@ -44,6 +44,10 @@ Festival Organizer, 88 Keys [Piano Festival], King’s Academy, Manja-Madaba, Jo
 ----
 
 MUSIC PRODUCTION
+––– FL Studio (col to left)
+––– Logic Pro
+––– Musescore
+
 <a href="https://www.youtube.com/watch?v=i-_NLlUHSKg">Burdened Blessings ft. Kareem Abualreesh</a>
 August 2021
 - img.spotify-white.png
@@ -51,7 +55,6 @@ August 2021
 - img.youtube-white
 ––– Anghami
 - img.sound-cloud-white.png
-––– FL Studio
 
 <a href="https://www.youtube.com/watch?v=_-mpwySnU1A">Sa’at (Hours) ft. Siraj</a>
 March 2023
@@ -60,7 +63,6 @@ March 2023
 - img.youtube-white
 ––– Anghami
 - img.sound-cloud-white.png
-––– Logic Pro
 
 ---
 

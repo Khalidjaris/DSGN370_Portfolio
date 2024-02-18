@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing</title>
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap 5.3.2 Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Pyscript -->
+    <!-- <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" /> -->
+
+    <style>
+        @media only screen and (max-width: 600px) {
+            #cell-landscape {
+                height: 200px;
+            }
+        }
+
+        .logo {
+            height: 30px;
+            width: auto;
+            margin-bottom: 20px;
+        }
+
+        #cell-landscape {
+            height: 280px;
+            object-fit: cover;
+            object-position: top center;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        #cell-portrait {
+            height: 600px;
+            object-fit: cover;
+            object-position: top center;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .night-mode {
+            color: whitesmoke;
+            background-color: black;
+        }
+
+        /* Hero */
+        #hero {
+            height: 100vh;
+        }
+
+        #art-is {
+            color: whitesmoke;
+            /* background-color: blanchedalmond; */
+            background-image: url(Assets/Landing/art-is-background.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #acknowledgements {
+            background-image: url(Assets/Landing/background-acknowledgements.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+        }
+
+        #acknowledgements a {
+            color: whitesmoke;
+        }
+
+        #contact {
+            /* padding: 1000px 0; */
+            background-color: blanchedalmond;
+            padding: 20em;
+            border-radius: 10px;
+            background-image: url(Assets/Landing/photography-otherworld.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 0 70%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Heart -->
+    <section class="img-fluid justify-content-md-center flex-wrap p-5" id="heart">
+        <img class="img-fluid" src="Assets/Landing/art-is-shapes.png" style="position: absolute; left: 0;" alt="">
+        <div class="row">
+            <h1 class="text-center">Heart</h1>
+            <hr class="rounded">
+            <div class="col-sm-4">
+                <div title="Page coming soon!">
+                    <img src="Assets/Landing/music-arabic-ensemble-main.jpg" class="img-fluid" id="cell-portrait"
+                        alt="">
+                </div>
+                <h3 style="margin-top: 10px; padding: 10px; text-align: center;">Music</h3>
+            </div>
+            <div class="col-sm-4">
+                <div title="Page coming soon!">
+                    <img src="Assets/Landing/photography-san-diego-lush.jpg" class="img-fluid" id="cell-portrait"
+                        alt="">
+                </div>
+                <h3 style="margin-top: 10px; padding: 10px; text-align: center;">Photography</h3>
+            </div>
+            <div class="col-sm-4">
+                <div title="Page coming soon!">
+                    <img src="Assets/Landing/poetry-a-thought-that-readily-slips-away-v1.png" class="img-fluid"
+                        id="cell-portrait" alt="">
+                </div>
+                <h3 style="margin-top: 10px; padding: 10px; text-align: center;">Writing and Poetry</h3>
+            </div>
+
+            <!-- <figure class="col-sm-4">
+                <img src="Assets/Landing/dance-spring-show-awesome.JPG" class="img-fluid" id="cell-landscape" alt="">
+            </figure>
+            <figure class="col-sm-4">
+                <img src="Assets/Landing/misc-horse-charcoal-drawing.jpg" class="img-fluid" id="cell-landscape" alt="">
+            </figure>
+            <div class="col-sm-4">
+                <img src="Assets/Landing/music-in-the-works.JPG" class="img-fluid" id="cell-landscape" alt="">
+            </figure> -->
+        </div>
+
+        <!-- <div class="col-1">
+                <img class="img-fluid" src="Assets/Thumbnails/fl-studio.png" alt="" style="height: 50px;">
+            </div> -->
+
+        <!-- <div class="col-1">
+                <img class="img-fluid" src="Assets/Thumbnails/logic-pro.png" alt="" style="height: 50px;">
+            </div> -->
+
+        <div style="padding: 0 0 10px 0;">
+            <!-- Spotify -->
+            <a href="https://open.spotify.com/track/0bDukQzS5Sy64vhAKFgnTJ?si=c1818bd8c0e14860" target="_blank"
+                rel="noopener noreferrer">
+                <img src="Assets/Thumbnails/spotify-white.png" alt="" id="icon">
+            </a>
+            <!-- Apple Music -->
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="Assets/Thumbnails/apple-white.png" alt="" id="icon">
+            </a>
+            <!-- YouTube -->
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="Assets/Thumbnails/youtube-white.png" alt="" style="height: 25px" id="icon">
+            </a>
+            <!-- Soundcloud -->
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="Assets/Thumbnails/sound-cloud-white.png" alt="" id="icon">
+            </a>
+        </div>
+
+        <div class="" style="padding-bottom: 10px;">
+            <!-- Spotify -->
+            <a href="https://open.spotify.com/track/0bDukQzS5Sy64vhAKFgnTJ?si=c1818bd8c0e14860" target="_blank"
+                rel="noopener noreferrer">
+                <img src="Assets/Thumbnails/spotify-white.png" alt="" id="icon">
+            </a>
+            <!-- Apple Music -->
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="Assets/Thumbnails/apple-white.png" alt="" id="icon">
+            </a>
+            <!-- YouTube -->
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="Assets/Thumbnails/youtube-white.png" alt="" style="height: 25px" id="icon">
+            </a>
+            <!-- Soundcloud -->
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="Assets/Thumbnails/sound-cloud-white.png" alt="" id="icon">
+            </a>
+        </div>
+    </section>
+
+</body>
+
+</html>

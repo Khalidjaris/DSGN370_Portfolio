@@ -20,21 +20,37 @@
     <!-- <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" /> -->
 
     <style>
-        #cell {
-            height: 100%;
-            width: auto;
-            object-fit: cover;
-        }
-
-        .night-mode {
-            color: whitesmoke;
-            background-color: black;
+        @media only screen and (max-width: 600px) {
+            #cell-landscape {
+                height: 200px;
+            }
         }
 
         .logo {
             height: 30px;
             width: auto;
             margin-bottom: 20px;
+        }
+
+        #cell-landscape {
+            height: 280px;
+            object-fit: cover;
+            object-position: top center;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        #cell-portrait {
+            height: 600px;
+            object-fit: cover;
+            object-position: top center;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .night-mode {
+            color: whitesmoke;
+            background-color: black;
         }
 
         /* Hero */
@@ -88,20 +104,23 @@
             </a>
             <ul class="nav nav-underline">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html#featured" style="color: black !important;"><strong>Featured</strong></a>
+                    <a class="nav-link" href="index.html#featured"
+                        style="color: black !important;"><strong>Featured</strong></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="index.html#hand"
                         style="color: black !important;"><strong>Hand</strong></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html#heart" style="color: black !important;"><strong>Heart</strong></a>
+                    <a class="nav-link" href="index.html#heart"
+                        style="color: black !important;"><strong>Heart</strong></a>
                 </li>
                 <li class="nav-item">
                     <hr width="1" size="img-fluid">
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html#contact" style="color: black !important;"><strong>Contact</strong></a>
+                    <a class="nav-link" href="index.html#contact"
+                        style="color: black !important;"><strong>Contact</strong></a>
                 </li>
             </ul>
         </div>
@@ -125,15 +144,17 @@
     <!-- About Me -->
     <secton id="about-me">
         <div class="container p-5">
-            <div class="row">
+            <!-- <div class="row">
                 <h5 style="margin-bottom: 0;">Me in ~15 Seconds</h4>
                     <h1 style="margin-top: 0">Khalid Siraj</h1>
-            </div>
+            </div> -->
             <div class="row">
                 <div class="col-sm-7">
-                    <p style="font-size: smaller;"><strong>adj.</strong> – eternal, everlasting, or immortal +
-                            light</p>
-                    <p>I play the <u><a href="#">piano</a></u>, <u><a href="#">write</a></u>, study <u><a
+                    <h5 style="margin-bottom: 0;">Me in ~15 Seconds</h4>
+                    <h1 style="margin-top: 0">Khalid Siraj</h1>
+                    <p style="font-size: smaller;"><strong>Khalid<em> (adj.)</em></strong> – eternal, everlasting; immortal
+                    <br><strong>Siraj<em> (n.)</em></strong> – light</p>
+                    <p>I play the <u><a href="https://khalidjaris.com/heart.html#music-compositions">piano</a></u>, <u><a href="https://khalidjaris.com/heart.html#poetry">write</a></u>, study <u><a
                                 href="#hand">engineering</a></u>, and take the more 'interesting' route whenever I can.
                     <p>I prefer running over walking and I carry a <u><a
                                 href='https://www.amazon.com/dp/B07V3HT9JG?psc=1&ref=ppx-yo2ov-dt-b-product-details'
@@ -180,36 +201,36 @@
     </section>
 
     <!-- Featured -->
-    <section class="container mt-5" id="featured">
+    <section class="container" id="featured">
         <div class="row text-center">
-            <h1 class="text-center">Featured Projects</h1>
+            <h1 class="text-center mt-5">Featured Projects</h1>
             <hr class="rounded">
             <!-- 1 -->
             <div class="col-sm-4 image" title="This page is not finished yet. Come back later!">
                 <!-- <a class="btn hovernow" href="#" role="button" style="height: 100%; width: 100%;"> -->
-                    <h2>Music Compositions</h2>
-                    <!-- <br> -->
-                    <figure>
-                        <img style="width: auto;" src="Assets/Landing/music-burdened-blessings.jpeg" class="img-fluid"
-                            alt="">
-                        <br>
-                        <br>
-                        <figcaption>
-                            <p>Some piano pieces I composed include
-                            <ul style="font-size: smaller; text-align: left;">
-                                <li>
-                                    <p><em>Ragtime</em> (2021)</p>
-                                </li>
-                                <li>
-                                    <p><em>Rahil Ghadan</em> (2021)</p>
-                                </li>
-                                <li>
-                                    <p><em>Lullaby of Remembrance</em> (2022)</p>
-                                </li>
-                            </ul>
-                            </p>
-                        </figcaption>
-                    </figure>
+                <h2>Music Compositions</h2>
+                <!-- <br> -->
+                <figure>
+                    <img style="width: auto;" src="Assets/Landing/music-burdened-blessings.jpeg" class="img-fluid"
+                        alt="">
+                    <br>
+                    <br>
+                    <figcaption>
+                        <p>Some piano pieces I composed:
+                        <ul style="font-size: smaller; text-align: left;">
+                            <li>
+                                <p><em>Ragtime</em> (2021)</p>
+                            </li>
+                            <li>
+                                <p><em>Rahil Ghadan</em> (2021)</p>
+                            </li>
+                            <li>
+                                <p><em>Lullaby of Remembrance</em> (2022)</p>
+                            </li>
+                        </ul>
+                        </p>
+                    </figcaption>
+                </figure>
                 <!-- </a> -->
             </div>
 
@@ -255,130 +276,122 @@
 
     <div class="p-3 night-mode" style="border-radius: 20px 20px 0 0;">
 
-        <!-- Hand -->
-        <section class="img-fluid justify-content-md-center flex-wrap p-5" id="hand">
+    <!-- Hand -->
+    <section class="img-fluid justify-content-md-center flex-wrap p-5" id="hand">
+        <div class="row">
+            <h1 class="text-center">Hand</h1>
+            <hr class="rounded">
             <div class="row">
-                <h1 class="text-center">Hand</h1>
-                <hr class="rounded">
-                <div class="row">
-                    <!-- Frame Fixturing -->
-                    <div class="image cell col-sm-4" title="Page coming soon!">
-                        <img class="img-fluid" src="Assets/Landing/baja-fixturing-side-frame.png" id="cell" alt="">
+                <!-- Frame Fixturing -->
+                <div class="col-sm-4">
+                    <div title="Page coming soon!">
+                        <img class="img-fluid" src="Assets/Landing/baja-fixturing-side-frame.png" id="cell-landscape" alt="">
                     </div>
-                    <!-- Friends in SF -->
-                    <div class="cell col-sm-4">
+                    <h3 style="margin-top: 10px; padding: 10px; text-align: center;">SAE Baja Frame Fixturing</h3>
+                    <div class="row">
+                        <img src="Assets/Thumbnails/solidworks-red.png" class="logo" alt="">
+                    </div>
+                    <p>For the Northwestern Baja SAE Racing Team, I used SolidWorks to model frame fixtures for welding the car frame.</p>
+                </div>
+                <!-- Friends in SF -->
+                <div class="col-sm-4">
+                    <div>
                         <a href="https://khalidjaris.github.io/Post-GradFriendMystery/" target="_blank"
-                                rel="noopener noreferrer">
-                            <img class="img-fluid cell" src="Assets/Landing/jour-article-hero.png" id="cell" alt="">
+                            rel="noopener noreferrer">
+                            <img class="img-fluid cell-landscape" src="Assets/Landing/jour-article-hero.png" id="cell-landscape" alt="">
                         </a>
                     </div>
-                    <!-- H2H -->
-                    <div class="image cell col-sm-4" title="Page coming soon!">
-                        <img class="img-fluid cell" src="Assets/Landing/h2h-website-main.png" id="cell" alt="">
+                    <h3 style="margin-top: 10px; padding: 10px; text-align: center;">Journalism: Visual Storytelling
+                    </h3>
+                    <div class="row">
+                        <img src="Assets/Thumbnails/html_5.svg" class="logo" alt="">
+                        <img src="Assets/Thumbnails/css_3.svg" class="logo" alt="">
+                        <img src="Assets/Thumbnails/vs_code.svg" class="logo" alt="">
                     </div>
+                    <p>During my time in the Northwestern Bay Area Immersion Program, I helped write an article
+                        about making friends in San Francisco.</p>
+                    <p>I programmed the article's webpage, which you can
+                        see <a href="https://khalidjaris.github.io/Post-GradFriendMystery/" target="_blank"
+                            rel="noopener noreferrer">here</a>.</p>
                 </div>
-
-                <div class="row">
-                    <!-- Frame Fixturing -->
-                    <div class="col-sm-4">
-                        <h3 style="margin-top: 10px; padding: 10px; text-align: center;">SAE Baja Frame Fixturing</h3>
-                        <div class="row">
-                            <img src="Assets/Thumbnails/solidworks-red.png" class="logo" alt="">
-                        </div>
-                        <p>I modeled a frame fixturing for Northwestern Baja. It is an integral component for welding the
-                            frame of a car.</p>
+                <!-- H2H -->
+                <div class="col-sm-4">
+                    <div title="Page coming soon!">
+                        <img class="img-fluid cell-landscape" src="Assets/Landing/h2h-website-main.png" id="cell-landscape" alt="">
                     </div>
-                    <!-- Friends in SF -->
-                    <div class="col-sm-4">
-                        <h3 style="margin-top: 10px; padding: 10px; text-align: center;">Journalism: Visual Storytelling
-                        </h3>
-                        <div class="row">
-                            <img src="Assets/Thumbnails/html_5.svg" class="logo" alt="">
-                            <img src="Assets/Thumbnails/css_3.svg" class="logo" alt="">
-                            <img src="Assets/Thumbnails/vs_code.svg" class="logo" alt="">
-                        </div>
-                        <p>During my time in the Northwestern Bay Area Immersion Program, I helped write an article
-                            about making friends in San Francisco. I programmed the article's webpage, which you can
-                            see <a href="https://khalidjaris.github.io/Post-GradFriendMystery/" target="_blank"
-                                rel="noopener noreferrer">here</a>.</p>
+                    <h3 style="margin-top: 10px; padding: 10px; text-align: center;">How2Help</h3>
+                    <div class="row">
+                        <img src="Assets/Thumbnails/figma-colored.png" class="logo" alt="">
                     </div>
-                    <!-- H2H -->
-                    <div class="col-sm-4">
-                        <h3 style="margin-top: 10px; padding: 10px; text-align: center;">How2Help</h3>
-                        <div class="row">
-                            <img src="Assets/Thumbnails/figma-colored.png" class="logo" alt="">
-                        </div>
-                        <p>How can we make it easy, accessible, and enjoyable to help while educating people?</p>
-                        <p><strong>How2Help</strong> is an idea for a platform that answers that question.</p>
-                        </li>
-                        </ul>
-                    </div>
-
-
+                    <p>How can we make it easy, accessible, and enjoyable to help while educating people?</p>
+                    <p><strong>How2Help</strong> is an idea for a platform that answers that question.</p>
+                    </li>
+                    </ul>
                 </div>
-
                 <!-- Manufacturing -->
                 <!-- <figure class="col-sm-4">
-                    <img class="img-fluid" src="Assets/Landing/manufacturing-sand-casting.jpeg" id="cell" alt="">
-                </figure> -->
+            <img class="img-fluid" src="Assets/Landing/manufacturing-sand-casting.jpeg" id="cell-landscape" alt="">
+        </figure> -->
 
                 <!-- Programming -->
-                <!-- <figure class="cell col-sm-4">
-                    <img class="img-fluid" src="Assets/Landing/coding-angry-birds-diagram.jpg" id="cell" alt="">
-                </figure> -->
+                <!-- <figure class="cell-landscape col-sm-4">
+            <img class="img-fluid" src="Assets/Landing/coding-angry-birds-diagram.jpg" id="cell-landscape" alt="">
+        </figure> -->
                 <!-- RHIT -->
-                <!-- <figure class="cell col-sm-4">
-                    <img class="img-fluid cell" src="Assets/Landing/rhit-optics-poster.jpg" id="cell" alt="">
-                </figure> -->
-
+                <!-- <figure class="cell-landscape col-sm-4">
+            <img class="img-fluid cell-landscape" src="Assets/Landing/rhit-optics-poster.jpg" id="cell-landscape" alt="">
+        </figure> -->
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Heart -->
-        <section class="img-fluid justify-content-md-center flex-wrap p-5" id="heart">
-            <img src="Assets/Landing/art-is-shapes.png" style="position: absolute; left: 0;" alt="">
-            <div class="row">
-                <h1 class="text-center">Heart</h1>
-                <hr class="rounded">
-                <div class="image cell col-sm-4" title="Page coming soon!">
-                    <img src="Assets/Landing/music-arabic-ensemble-main.jpg" class="img-fluid" id="cell" alt="">
+    <!-- Heart -->
+    <section class="img-fluid justify-content-md-center flex-wrap p-5" id="heart">
+        <div class="justify-content-between">
+            <img class="img-fluid" src="Assets/Landing/art-is-shapes-left.png" style="position: absolute; left: 0;" alt="">
+            <img class="img-fluid" src="Assets/Landing/art-is-shapes-right.png" style="position: absolute; right: 0;" alt="">
+        </div>
+        <div class="row">
+            <h1 class="text-center">Heart</h1>
+            <hr class="rounded">
+            <div class="col-sm-4">
+                <a href="https://khalidjaris.com/heart.html#music-compositions">
+                    <img src="Assets/Landing/music-arabic-ensemble-main.jpg" class="img-fluid" id="cell-portrait" alt="">
+                </a>
+                <h3 style="margin-top: 10px; padding: 10px; text-align: center;">Music</h3>
+            </div>
+            <div class="col-sm-4">
+                <div title="Page coming soon!">
+                    <img src="Assets/Landing/photography-san-diego-lush.jpg" class="img-fluid" id="cell-portrait" alt="">
                 </div>
-                <div class="image cell col-sm-4" title="Page coming soon!">
-                    <img src="Assets/Landing/photography-san-diego-lush.jpg" class="img-fluid" id="cell" alt="">
-                </div>
-                <div class="image cell col-sm-4" title="Page coming soon!">
+                <h3 style="margin-top: 10px; padding: 10px; text-align: center;">Photography</h3>
+            </div>
+            <div class="col-sm-4">
+                <a href="https://khalidjaris.com/heart.html#poetry">
                     <img src="Assets/Landing/poetry-a-thought-that-readily-slips-away-v1.png" class="img-fluid"
-                        id="cell" alt="">
-                </div>
+                        id="cell-portrait" alt="">
+                </a>
+                <h3 style="margin-top: 10px; padding: 10px; text-align: center;">Writing and Poetry</h3>
+            </div>
 
-                <!-- <figure class="col-sm-4">
-                    <img src="Assets/Landing/dance-spring-show-awesome.JPG" class="img-fluid" id="cell" alt="">
-                </figure>
-                <figure class="col-sm-4">
-                    <img src="Assets/Landing/misc-horse-charcoal-drawing.jpg" class="img-fluid" id="cell" alt="">
-                </figure>
-                <div class="col-sm-4">
-                    <img src="Assets/Landing/music-in-the-works.JPG" class="img-fluid" id="cell" alt="">
-                </figure> -->
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <h3 style="margin-top: 10px; padding: 10px; text-align: center;">Music</h3>
-                </div>
-                <div class="col-sm-4">
-                    <h3 style="margin-top: 10px; padding: 10px; text-align: center;">Photography</h3>
-                </div>
-                <div class="col-sm-4">
-                    <h3 style="margin-top: 10px; padding: 10px; text-align: center;">Writing and Poetry</h3>
-                </div>
-            </div>
-        </section>
+            <!-- <figure class="col-sm-4">
+                <img src="Assets/Landing/dance-spring-show-awesome.JPG" class="img-fluid" id="cell-landscape" alt="">
+            </figure>
+            <figure class="col-sm-4">
+                <img src="Assets/Landing/misc-horse-charcoal-drawing.jpg" class="img-fluid" id="cell-landscape" alt="">
+            </figure>
+            <div class="col-sm-4">
+                <img src="Assets/Landing/music-in-the-works.JPG" class="img-fluid" id="cell-landscape" alt="">
+            </figure> -->
+        </div>
+    </section>
 
         <!-- Acknowledgements -->
         <section class="container flex-wrap pt-5 col-10" id="acknowledgements">
             <h1 class="text-center">Acknowledgments</h1>
             <hr class="rounded">
-            <p>This portfolio would not have been possible without the generous feedback of my remarkable peers, mentors, and friends.</p>
+            <p>This portfolio would not have been possible without the generous feedback of my remarkable peers,
+                mentors, and friends.</p>
             <p>My heartfelt thanks to <strong>Prof. Kim Hoffman, Pari Pradhan, Mark Schumacher, and Micheal
                     Miller.</strong></p><br>
 
@@ -397,7 +410,8 @@
                 <p><strong>Yousef Abdo and Mohammed Hameed,</strong> for keeping me afloat during the darkest times and
                     making them
                     among the best.</p>
-                <p><strong><a href="https://www.instagram.com/kareem.abualreesh/">Kareem AbuAlreesh</a>,</strong> for entrusting me with your dreams and mine.</p>
+                <p><strong><a href="https://www.instagram.com/kareem.abualreesh/">Kareem AbuAlreesh</a>,</strong> for
+                    entrusting me with your dreams and mine.</p>
                 <p><strong>Felisha Fan,</strong> for being a true friend when I needed one most.</p>
                 <p><strong>Pam Daniels and Jason Yuan,</strong> for teaching me how to walk the path of the
                     unconventional.</p>
@@ -448,7 +462,7 @@
                         <!-- YouTube -->
                         <a href="https://www.youtube.com/channel/UCmlBIN46mO8T6JfsBk_LkWQ?pbjreload=102" target="_blank"
                             rel="noopener noreferrer">
-                            <img src="Assets/Thumbnails/youtube-white.png" alt="" id="icon">
+                            <img src="Assets/Thumbnails/youtube-white.png" alt="" style="height: 25px" id="icon">
                         </a>
                     </div>
                     <p>khalidsiraj2025@u.northwestern.edu</p>
